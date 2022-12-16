@@ -38,7 +38,7 @@ Sou um <img src="https://media.giphy.com/media/IauL6LvGNlT3ffhcqq/giphy.gif" wid
 
 - :zap: No meu tempo livre, crio projetos para praticar o que aprendi e passo tempo com a família.
 
-- :mailbox:Como me contatar: [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](linkedin.com/in/rocha-yuri)
+- :mailbox:Como me contatar: [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://linkedin.com/in/rocha-yuri)
 
 ---
 
