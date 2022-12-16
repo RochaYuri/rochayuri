@@ -7,7 +7,7 @@
     <a href="https://linkedin.com/in/rocha-yuri">
       <img src="https://img.shields.io/badge/LinkedIn-darkblue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
     </a>
-    <a href="rochayuri.github.io/portifolio">
+    <a href="https://rochayuri.github.io/portifolio">
       <img src="https://img.shields.io/badge/Portfolio-9cf?style=for-the-badge&logo=microsoftacademic&logoColor=white" alt="Portfolio Badge"/>
     </a>
     <a href="https://instagram.com/rochayurii">
