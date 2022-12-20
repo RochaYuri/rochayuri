@@ -1,0 +1,1051 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {scroll-behavior: smooth;}
+
+body {
+    background-image: url("../images/background.svg");
+    background-size: cover;
+}
+
+.header {
+    background-color: transparent;
+    height: 7vh;
+    width: 100%;
+    padding: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.navButton {
+    background-color: transparent;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.navButton a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.521);
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.navButton:hover {
+    border: 3px solid #333449;
+    border-radius: 30px;
+}
+
+.navButton a:hover {
+    color:#333449;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: 'Comfortaa', cursive;
+    color: rgba(0, 0, 0, 0.521);
+    transition: 0.1s;
+}
+
+.logo:hover {
+    font-size: 52px;
+    cursor: pointer;
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bibliography {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "picture introduction"
+    "picture abilities";
+    padding-top: 10rem;
+    height: 93vh;
+    font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+}
+
+.picture img {
+    max-width: 65%;
+    transition: 0.5s;
+}
+
+.picture img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: picture;
+}
+
+#introduction {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: introduction;
+    max-width: 700px;
+    align-content: center;
+    font-size: 25px;
+}
+
+.introduction h3 {
+    margin-bottom: 35px;
+}
+
+.introduction p {
+    font-size: 400px;
+}
+
+.abilities {
+    grid-area: abilities;
+}
+
+.abilities h2 {
+    text-align: center;
+}
+
+.abilitiesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.abilitiesList li {
+    position: relative;
+    list-style: none;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.abilitiesList li .abilitiesContentContainer {
+    position: absolute;
+    top: 85px;
+    width: 500px;
+    background: #222336;
+    padding: 20px;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+}
+
+.abilitiesList li .abilitiesContentContainer:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #222336;
+    top: -10px;
+    left: 265px;
+    transform: rotate(45deg);
+}
+
+.abilitiesList li:hover .abilitiesContentContainer {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+}
+
+.abilitiesImg {
+    width: 50px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.abilitiesImg:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.abilitiesContent img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+.abilitiesContentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "skillImage skillClassification"
+    "abilitiesSkillContainer abilitiesSkillContainer";
+    gap: 20px 0;
+    color: white;
+    justify-content: center;
+}
+
+.skillImage {
+    grid-area: skillImage;
+    display: flex;
+    justify-content: center;
+}
+.skillImage img {
+    width: 65%;
+}
+
+.skillLevelTitle {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.skillLevel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 25px;
+    color: #dece52;
+}
+
+.abilitiesClassification {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.skillClassification {
+    grid-area: skillClassification;
+}
+
+.abilitiesSkillContainer {
+    grid-area: abilitiesSkillContainer;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "abilitiesSkillTitle abilitiesSkillTitle"
+    "abilitiesSkill1 abilitiesSkill2";
+}
+
+.abilitiesSkillContainer li {
+    display: flex;
+    justify-content: center;
+}
+
+.abilitiesSkillTitle {
+    grid-area: abilitiesSkillTitle;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px
+}
+
+.abilitiesSkill1 {
+    grid-area: abilitiesSkill1;
+}
+
+.abilitiesSkill2 {
+    grid-area: abilitiesSkill2;
+}
+
+.projectsTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+    font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+    padding: 35px;
+}
+
+.projects {
+    width: 100%;
+    margin-top: 75px;
+}
+
+.projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "gk lb lm at1"
+    "gk cb1 am1 at1"
+    "gk cb2 am2 at2"
+    "gk rb rm at2";
+    align-items: center;
+    width: 85%;
+    height: 950px;
+    padding: 50px;
+    background-image: url("../images/pitch.svg");
+    background-size: contain;
+    background-repeat: round;
+    margin: auto;
+}
+
+.projectName {
+    text-shadow: 0.1em 0.0001em 0.5em #222336;
+    font-weight: 700;
+}
+
+.gk {
+    grid-area: gk;
+}
+.lb {
+    grid-area: lb;
+}
+.cb1 {
+    grid-area: cb1;
+}
+.cb2 {
+    grid-area: cb2;
+}
+.rb {
+    grid-area: rb;
+}
+.lm {
+    grid-area: lm;
+}
+.am1 {
+    grid-area: am1;
+}
+.am2 {
+    grid-area: am2;
+}
+.rm {
+    grid-area: rm;
+}
+.at1 {
+    grid-area: at1;
+}
+.at2 {
+    grid-area: at2;
+}
+
+.projects img {
+    width: 80px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+.projects img:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedias img {
+    display: flex;
+    padding-bottom: 15px;
+    width: 35px;
+    transition: 0.3s;
+}
+
+.socialMedias img:hover {
+    opacity: 65%;
+}
+
+.footer form {
+    font-family: 'Space Grotesk', Arial;
+    font-size: 16px;
+    padding: 35px;
+}
+
+.footer form #formName, #email {
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 8px;
+    padding: 10px;
+    border: 1px solid #333449;
+    border-radius: 10px;
+}
+
+.footer form #formMessage {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 8px;
+    padding: 10px;
+    width: 345px;
+    border: 1px solid #333449;
+    border-radius: 10px;
+}
+
+.e-mail button {
+    font-family: 'Space Grotesk', Arial;
+    font-size: 25px;
+    width: 105px;
+    background-color: transparent;
+    border: 3px solid #333449;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.e-mail button:hover {
+    cursor: pointer;
+    background-color: rgba(118, 189, 190, 0.658);
+}
+
+.copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(75, 74, 74, 0.582);
+}
+
+.mainContainer {
+    animation: transitionIn 1.5s;
+}
+
+/* PÁGINA DE ENVIO DE E-MAIL */
+
+.emailSentMessage {
+    margin: 150px;
+    text-align: center;
+}
+
+.emailSentMessage h2 {
+    font-size: 55px;
+    font-family: 'Space Grotesk', Arial;
+}
+
+.emailSentMessage p {
+    font-size: 30px;
+    font-family: 'Space Grotesk', Arial;
+}
+
+.backhome {
+    font-family: 'Space Grotesk', Arial;
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 3px solid #333449;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.backhome:hover {
+    cursor: pointer;
+    background-color: rgba(118, 189, 190, 0.658);
+}
+
+.backhome a {
+    text-decoration: none;
+    color: #333449;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    .header {
+        padding: 3%;
+    }
+
+    .mainContainer {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "bibliography bibliography"
+        "projects projects";
+        width: 100vw;
+    }
+
+    .bibliography {
+        grid-area: bibliography;
+        padding: 50px;
+        margin-bottom: 0;
+    }
+
+    .abilitiesContentContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "skillImage skillImage"
+        "skillClassification skillClassification";
+        max-width: 200px;
+        gap: 0px;
+    }
+
+    .abilitiesList li .abilitiesContentContainer:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: #222336;
+        top: -10px;
+        left: 115px;
+        transform: rotate(45deg);
+    }
+
+    .skillImage img {
+        width: 25%;
+    }
+
+    .abilitiesSkillContainer {
+        display: none;
+    }
+
+    .projects {
+        grid-area: projects;
+        margin-top: -15%;
+    }
+
+    .projectsContainer {
+        max-height: 650px;
+    }
+}
+
+@media screen and (min-width: 729px) and (max-width: 1024px) {
+    .abilitiesContentContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "skillImage skillImage"
+        "skillClassification skillClassification";
+        max-width: 150px;
+        gap: 0px;
+    }
+
+    .abilitiesList li .abilitiesContentContainer:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: #222336;
+        top: -10px;
+        left: 90px;
+        transform: rotate(45deg);
+    }
+
+    .abilitiesImg {
+        width: 45px;
+        margin: 5px;
+        transition: 0.3s;
+    }
+
+    .projectsContainer {
+        max-height: 550px;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+
+    .header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bibliography {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    #introduction {
+        font-size: 15px;
+    }
+
+    .abilitiesList li .abilitiesContentContainer {
+        position: absolute;
+        top: 65px;
+        width: 150px;
+        background: #222336;
+        padding: 20px;
+        border-radius: 15px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateX(-50%) translateY(-50px);
+    }
+    .abilitiesList li .abilitiesContentContainer:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: #222336;
+        top: -10px;
+        left: 82px;
+        transform: rotate(45deg);
+    }
+    .abilitiesImg {
+        width: 28px;
+        margin: 5px;
+        transition: 0.3s;
+    }
+
+    .skillLevelTitle {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .skillLevel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 20px;
+        color: #dece52;
+    }
+    
+    .abilitiesClassification {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .projectsContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "gk cb1 am1 at1"
+        "gk cb2 am2 at2";
+        padding: 50px 20px;
+        max-height: 400px;
+        text-align: center;
+    }
+
+    .projectsContainer img {
+        width: 65px;
+    }
+
+    .gk {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-area: gk;
+    }
+    .lb {
+        display: none;
+    }
+    .cb1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-area: cb1;
+    }
+    .cb2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-area: cb2;
+    }
+    .rb {
+        display: none;
+    }
+    .lm {
+        display: none;
+    }
+    .am1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-area: am1;
+    }
+    .am2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-area: am2;
+    }
+    .rm {
+        display: none;
+    }
+    .at1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-area: at1;
+    }
+    .at2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-area: at2;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+    .header {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header a {
+        font-size: 25px;
+    }
+
+    .mainContainer {
+        width: 100vw;
+    }
+
+    .picture {
+        margin-bottom: 15px;
+    }
+
+    .bibliography {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        min-height: 800px;
+    }
+
+    #introduction {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .abilities {
+        margin-top: 20px;
+    }
+
+    .abilitiesImg {
+        width: 35px;
+    }
+
+    .abilitiesSkillContainer {
+        display: none;
+    }
+
+    .abilitiesContentContainer {
+        display: none;
+    }
+
+    .projects {
+        align-items: center;
+    }
+
+    .projectsTitle {
+        font-size: 35px;
+    }
+
+    .projectsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "gk gk"
+        "cb1 cb1"
+        "am1 am2"
+        "at1 at1";
+        padding: 20px 50px;
+        gap: 3px;
+        max-height: 300px;
+        max-width: 230px;
+        background-image: url("../images/pitch2.svg");
+        background-size: cover;
+    }
+
+    .projectsContainer img {
+        width: 40px;
+    }
+
+    .projectsContainer p {
+        font-size: 16px;
+    }
+
+    .gk {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        grid-area: gk;
+    }
+    .lb {
+        display: none;
+    }
+    .cb1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        grid-area: cb1;
+    }
+    .cb2 {
+        display: none;
+    }
+    .rb {
+        display: none;
+    }
+    .lm {
+        display: none;
+    }
+    .am1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        grid-area: am1;
+    }
+    .am2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        grid-area: am2;
+    }
+    .rm {
+        display: none;
+    }
+    .at1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        grid-area: at1;
+    }
+    .at2 {
+        display: none;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 600px;
+        margin: 0;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+
+    .socialMedias {
+        display: flex;
+    }
+
+    .socialMedias img {
+        margin: 5px;
+    }
+
+    .e-mail{
+        padding: 0;
+        margin: 0;
+        max-width: 100vw;
+    }
+
+    #formName{
+        max-width: 100%;
+    }
+
+    #email{
+        max-width: 100%;
+    }
+
+    #formMessage{
+        max-width: 100%;
+    }
+
+}
+@media screen and (min-width: 280px) and (max-width: 320px) {
+    .header {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .header a {
+        font-size: 18px;
+    }
+
+    .mainContainer {
+        width: 100vw;
+    }
+
+    .picture {
+        margin-bottom: 15px;
+    }
+
+    .bibliography {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        min-height: 800px;
+    }
+
+    #introduction {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .abilities {
+        margin-top: 20px;
+    }
+
+    .abilitiesImg {
+        width: 35px;
+    }
+
+    .abilitiesSkillContainer {
+        display: none;
+    }
+
+    .abilitiesContentContainer {
+        display: none;
+    }
+
+    .projects {
+        align-items: center;
+    }
+
+    .projectsTitle {
+        font-size: 35px;
+    }
+
+    .projectsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "gk gk"
+        "cb1 cb1"
+        "am1 am2"
+        "at1 at1";
+        padding: 20px 50px;
+        gap: 3px;
+        max-height: 300px;
+        max-width: 230px;
+        background-image: url("../images/pitch2.svg");
+        background-size: cover;
+    }
+
+    .projectsContainer img {
+        width: 40px;
+    }
+
+    .projectsContainer p {
+        font-size: 16px;
+    }
+
+    .gk {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        grid-area: gk;
+    }
+    .lb {
+        display: none;
+    }
+    .cb1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        grid-area: cb1;
+    }
+    .cb2 {
+        display: none;
+    }
+    .rb {
+        display: none;
+    }
+    .lm {
+        display: none;
+    }
+    .am1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        grid-area: am1;
+    }
+    .am2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        grid-area: am2;
+    }
+    .rm {
+        display: none;
+    }
+    .at1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        grid-area: at1;
+    }
+    .at2 {
+        display: none;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 600px;
+        margin: 0;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+
+    .socialMedias {
+        display: flex;
+    }
+
+    .socialMedias img {
+        margin: 5px;
+    }
+
+    .e-mail{
+        padding: 0;
+        margin: 0;
+        max-width: 100vw;
+    }
+
+    #formName{
+        max-width: 100%;
+    }
+
+    #email{
+        max-width: 100%;
+    }
+
+    #formMessage{
+        max-width: 100%;
+    }
+}
