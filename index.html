@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Space+Grotesk&family=Teko:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>Portifólio Yuri Rocha</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Space+Grotesk&family=Teko:wght@300;700&display=swap');
@@ -23,76 +24,265 @@
         <div class="mainContainer">
             <section class="bibliography" id="start">
                 <div class="picture">
-                    <img src="./images/Foto Currículo Yuri.png" alt="foto-yuri-rocha">
+                    <img src="./images/yuri.svg" alt="foto-yuri-rocha">
                 </div>
-                <div class="introduction">
+                <div id="introduction">
                     <h3>Olá! Como vai?</h3>
-                    <p>Esté é meu portifólio! O lugar onde busco mostrar minhas habilidades e ideáis nos projetos que criei!<br>
-                    Sou uma pessoa apaixonada por tecnologia, esportes (acho que pela forma dos projetos apresentados abaixo deu para perceber né?), família e jogos. <br> 
+                    <p>Esté é meu portifólio! O lugar onde busco mostrar minhas habilidades e idéias nos projetos que criei!<br>
+                    Sou uma pessoa apaixonada por tecnologia, esportes (acho que pela forma dos projetos apresentados abaixo vai ser possível peceber.), família e jogos. <br> 
                     Acredito que a tecnologia tem o poder necessário de mudar a vida das pessoas, através do acesso à informação.
                     Siga em frente! Aproveite o tempo que me visita e, caso goste, me contate!</p>
                 </div>
-                <div class="habilities">
+                <div class="abilities">
                     <h2>Habilidades</h2>
-                    <img class="habilitiesImg" src="./images/html5.webp" alt="html">
-                    <img class="habilitiesImg front-end" src="./images/css.webp" alt="css">
-                    <img class="habilitiesImg" src="./images/js.webp" alt="javascript">
-                    <img class="habilitiesImg" src="./images/python.webp" alt="python">
-                    <img class="habilitiesImg back-end" src="./images/java.webp" alt="java">
-                    <img class="habilitiesImg database" src="./images/sql.webp" alt="sql">
-                    <img class="habilitiesImg editor" src="./images/photoshop.webp" alt="photoshop">
-                    <img class="habilitiesImg" src="./images/linux.webp" alt="linux">
-                    <img class="habilitiesImg os" src="./images/windows.webp" alt="windows">
+                    <ul class="abilitiesList">
+                        <li class="html5">
+                            <img class="abilitiesImg" src="./images/html5.svg" alt="html5">
+                            <div class="abilitiesContentContainer">
+                                <div class ="skillImage">
+                                    <img src="./images/html5.svg" alt="html5">
+                                </div>
+                                <div class="skillClassification">
+                                    <h3 class="skillLevelTitle">HTML</h3>
+                                    <p class="skillLevel">★★★★☆</p>
+                                    <p class="abilitiesClassification">Avançado</p>
+                                </div>
+                                <div class="abilitiesSkillContainer">
+                                    <h3 class="abilitiesSkillTitle">Competências</h3>
+                                    <ul class="abilitiesSkill1">
+                                        <li class="abilitiesSkillContent">• Estrutura</li>
+                                        <li class="abilitiesSkillContent">• Semântica</li>
+                                        <li class="abilitiesSkillContent">• Multimídia</li>
+                                    </ul>
+                                    <ul class="abilitiesSkill2">
+                                        <li class="abilitiesSkillContent">• Formulários</li>
+                                        <li class="abilitiesSkillContent">• Tabelas</li>
+                                        <li class="abilitiesSkillContent">• Listas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="css3">
+                            <img class="abilitiesImg front-end" src="./images/css3.svg" alt="css">
+                            <div class="abilitiesContentContainer">
+                                <div class ="skillImage">
+                                    <img src="./images/css3.svg" alt="css3">
+                                </div>
+                                <div class="skillClassification">
+                                    <h3 class="skillLevelTitle">CSS</h3>
+                                    <p class="skillLevel">★★★☆☆</p>
+                                    <p class="abilitiesClassification">Intermediário</p>
+                                </div>
+                                <div class="abilitiesSkillContainer">
+                                    <h3 class="abilitiesSkillTitle">Competências</h3>
+                                    <ul class="abilitiesSkill1">
+                                        <li class="abilitiesSkillContent">• Flexbox</li>
+                                        <li class="abilitiesSkillContent">• Grid</li>
+                                        <li class="abilitiesSkillContent">• Sintaxe</li>
+                                    </ul>
+                                    <ul class="abilitiesSkill2">
+                                        <li class="abilitiesSkillContent">• Animação</li>
+                                        <li class="abilitiesSkillContent">• Elementos</li>
+                                        <li class="abilitiesSkillContent">• Seletores</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="javascript">
+                            <img class="abilitiesImg" src="./images/javascript.svg" alt="javascript">
+                            <div class="abilitiesContentContainer">
+                                <div class ="skillImage">
+                                    <img src="./images/javascript.svg" alt="javascript">
+                                </div>
+                                <div class="skillClassification">
+                                    <h3 class="skillLevelTitle">JavaScript</h3>
+                                    <p class="skillLevel">★★☆☆☆</p>
+                                    <p class="abilitiesClassification">Iniciante</p>
+                                </div>
+                                <div class="abilitiesSkillContainer">
+                                    <h3 class="abilitiesSkillTitle">Competências</h3>
+                                    <ul class="abilitiesSkill1">
+                                        <li class="abilitiesSkillContent">• Lógica</li>
+                                        <li class="abilitiesSkillContent">• Fundamentos</li>
+                                        <li class="abilitiesSkillContent">• Sintaxe</li>
+                                        <li class="abilitiesSkillContent">• Funções</li>
+                                    </ul>
+                                    <ul class="abilitiesSkill2">
+                                        <li class="abilitiesSkillContent">• Manipulação de DOM</li>
+                                        <li class="abilitiesSkillContent">• Estruturas</li>
+                                        <li class="abilitiesSkillContent">• Laços e repetições</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="python">
+                            <img class="abilitiesImg" src="./images/python.svg" alt="python">
+                            <div class="abilitiesContentContainer">
+                                <div class ="skillImage">
+                                    <img src="./images/python.svg" alt="python">
+                                </div>
+                                <div class="skillClassification">
+                                    <h3 class="skillLevelTitle">Python</h3>
+                                    <p class="skillLevel">★★★☆☆</p>
+                                    <p class="abilitiesClassification">Intermediário</p>
+                                </div>
+                                <div class="abilitiesSkillContainer">
+                                    <h3 class="abilitiesSkillTitle">Competências</h3>
+                                    <ul class="abilitiesSkill1">
+                                        <li class="abilitiesSkillContent">• Sintaxe</li>
+                                        <li class="abilitiesSkillContent">• Estrutura de Dados</li>
+                                        <li class="abilitiesSkillContent">• CRUD</li>
+                                        <li class="abilitiesSkillContent">• Listas, tuplas, dicionários</li>
+                                    </ul>
+                                    <ul class="abilitiesSkill2">
+                                        <li class="abilitiesSkillContent">• Objetos</li>
+                                        <li class="abilitiesSkillContent">• Laços e repetições</li>
+                                        <li class="abilitiesSkillContent">• Manipulação de Strings</li>
+                                        <li class="abilitiesSkillContent">• Tratamento de exceções</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="postgresql">
+                            <img class="abilitiesImg database" src="./images/postgresql.svg" alt="postgresql">
+                            <div class="abilitiesContentContainer">
+                                <div class ="skillImage">
+                                    <img src="./images/postgresql.svg" alt="postgresql">
+                                </div>
+                                <div class="skillClassification">
+                                    <h3 class="skillLevelTitle">SQL</h3>
+                                    <p class="skillLevel">★★☆☆☆</p>
+                                    <p class="abilitiesClassification">Inciante</p>
+                                </div>
+                                <div class="abilitiesSkillContainer">
+                                    <h3 class="abilitiesSkillTitle">Competências</h3>
+                                    <ul class="abilitiesSkill1">
+                                        <li class="abilitiesSkillContent">• Criação de BD</li>
+                                        <li class="abilitiesSkillContent">• Manipulação dos dados</li>
+                                        <li class="abilitiesSkillContent">• Relacionamento</li>
+                                    </ul>
+                                    <ul class="abilitiesSkill2">
+                                        <li class="abilitiesSkillContent">• Pesquisas</li>
+                                        <li class="abilitiesSkillContent">• Sintaxe</li>
+                                        <li class="abilitiesSkillContent">• Tipos de dados</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="git">
+                            <img class="abilitiesImg editor" src="./images/git.svg" alt="git">
+                            <div class="abilitiesContentContainer">
+                                <div class ="skillImage">
+                                    <img src="./images/git.svg" alt="git">
+                                </div>
+                                <div class="skillClassification">
+                                    <h3 class="skillLevelTitle">Git</h3>
+                                    <p class="skillLevel">★★☆☆☆</p>
+                                    <p class="abilitiesClassification">Inciante</p>
+                                </div>
+                                <div class="abilitiesSkillContainer">
+                                    <h3 class="abilitiesSkillTitle">Competências</h3>
+                                    <ul class="abilitiesSkill1">
+                                        <li class="abilitiesSkillContent">• Commits</li>
+                                        <li class="abilitiesSkillContent">• Pull Requests</li>
+                                        <li class="abilitiesSkillContent">• Clone</li>
+                                    </ul>
+                                    <ul class="abilitiesSkill2">
+                                        <li class="abilitiesSkillContent">• Branches</li>
+                                        <li class="abilitiesSkillContent">• Sintaxe</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="linux">
+                            <img class="abilitiesImg" src="./images/linux.svg" alt="linux">
+                            <div class="abilitiesContentContainer">
+                                <div class ="skillImage">
+                                    <img src="./images/linux.svg" alt="linux">
+                                </div>
+                                <div class="skillClassification">
+                                    <h3 class="skillLevelTitle">Linux</h3>
+                                    <p class="skillLevel">★★☆☆☆</p>
+                                    <p class="abilitiesClassification">Iniciante</p>
+                                </div>
+                                <div class="abilitiesSkillContainer">
+                                    <ul class="abilitiesSkill1">
+                                    </ul>
+                                    <ul class="abilitiesSkill2">
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="windows">
+                            <img class="abilitiesImg os" src="./images/windows.svg" alt="windows">
+                            <div class="abilitiesContentContainer">
+                                <div class ="skillImage">
+                                    <img src="./images/windows.svg" alt="windows">
+                                </div>
+                                <div class="skillClassification">
+                                    <h3 class="skillLevelTitle">Windows</h3>
+                                    <p class="skillLevel">★★★★☆</p>
+                                    <p class="abilitiesClassification">Avançado</p>
+                                </div>
+                                <div class="abilitiesSkillContainer">
+                                    <ul class="abilitiesSkill1">
+                                    </ul>
+                                    <ul class="abilitiesSkill2">
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
-            <div class="projectsTitle" id="projects">
-                <h2>Projetos</h2>
-            </div>
             <section class="projects">
+                <div class="projectsTitle" id="projects">
+                    <h2>Projetos</h2>
+                </div>
                 <div class="projectsContainer">
                     <div class="gk">
-                        <a href=""><img src="./images/vecteezy_icon-image-not-found-vector_.jpg" alt=""></a>
-                        <p>Lorem, ipsum.</p>
+                        <a href=""><img src="./images/production.svg" alt=""></a>
+                        <p class="projectName">Em produção.</p>
                     </div>
                     <div class="lb">
-                        <a href=""><img src="./images/vecteezy_icon-image-not-found-vector_.jpg" alt=""></a>
-                        <p>Lorem, ipsum.</p>
+                        <a href=""><img src="./images/production.svg" alt=""></a>
+                        <p class="projectName">Em produção.</p>
                     </div>
                     <div class="cb1">
-                        <a href=""><img src="./images/vecteezy_icon-image-not-found-vector_.jpg" alt=""></a>
-                        <p>Lorem, ipsum.</p>
+                        <a href=""><img src="./images/production.svg" alt=""></a>
+                        <p class="projectName">Em produção.</p>
                     </div>
                     <div class="cb2">
-                        <a href=""><img src="./images/vecteezy_icon-image-not-found-vector_.jpg" alt=""></a>
-                        <p>Lorem, ipsum.</p>
+                        <a href=""><img src="./images/production.svg" alt=""></a>
+                        <p class="projectName">Em produção.</p>
                     </div>
                     <div class="rb">
-                        <a href=""><img src="./images/vecteezy_icon-image-not-found-vector_.jpg" alt=""></a>
-                        <p>Lorem, ipsum.</p>
+                        <a href=""><img src="./images/production.svg" alt=""></a>
+                        <p class="projectName">Em produção.</p>
                     </div>
                     <div class="lm">
-                        <a href=""><img src="./images/vecteezy_icon-image-not-found-vector_.jpg" alt=""></a>
-                        <p>Lorem, ipsum.</p>
+                        <a href=""><img src="./images/production.svg" alt=""></a>
+                        <p class="projectName">Em produção.</p>
                     </div>
                     <div class="am1">
-                        <a href=""><img src="./images/vecteezy_icon-image-not-found-vector_.jpg" alt=""></a>
-                        <p>Lorem, ipsum.</p>
+                        <a href=""><img src="./images/production.svg" alt=""></a>
+                        <p class="projectName">Em produção.</p>
                     </div>
                     <div class="am2">
-                        <a href=""><img src="./images/vecteezy_icon-image-not-found-vector_.jpg" alt=""></a>
-                        <p>Lorem, ipsum.</p>
+                        <a href=""><img src="./images/production.svg" alt=""></a>
+                        <p class="projectName">Em produção.</p>
                     </div>
                     <div class="rm">
-                        <a href=""><img src="./images/vecteezy_icon-image-not-found-vector_.jpg" alt=""></a>
-                        <p>Lorem, ipsum.</p>
+                        <a href=""><img src="./images/production.svg" alt=""></a>
+                        <p class="projectName">Em produção.</p>
                     </div>
                     <div class="at1">
-                        <a href=""><img src="./images/vecteezy_icon-image-not-found-vector_.jpg" alt=""></a>
-                        <p>Lorem, ipsum.</p>
+                        <a href=""><img src="./images/production.svg" alt=""></a>
+                        <p class="projectName">Em produção.</p>
                     </div>
                     <div class="at2">
-                        <a href=""><img src="./images/vecteezy_icon-image-not-found-vector_.jpg" alt=""></a>
-                        <p>Lorem, ipsum.</p>
+                        <a href=""><img src="./images/production.svg" alt=""></a>
+                        <p class="projectName">Em produção.</p>
                     </div>
                 </div>
             </section>
@@ -105,16 +295,20 @@
                 <a target="_blank" href="https://facebook.com/RochaYurii/"><img src="./images/facebook.svg" alt="facebook"></a>
             </div>
             <div class="e-mail">
-                <form>
+                <form action="https://formsubmit.co/rochayuri.dev@gmail.com" method="POST">
                     <h3 class="formTitle">Me envie um e-mail!</h3>
-                    <input type="text" placeholder="Nome" name="name" id="name"><br>
-                    <textarea name="message" placeholder="Sua mensagem.." id="message" rows="5" cols="40"></textarea>
-                    <button type="submit">Enviar</button>
+                    <input type="text" placeholder="Nome" name="name" id="formName" required><br>
+                    <input type="email" placeholder="E-mail" name="email" id="email" required><br>
+                    <textarea name="message" placeholder="Sua mensagem.." id="formMessage" required></textarea><br>
+                    <button type="submit" id="button">Enviar</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/emailsent.html">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
         </footer>
         <div class="copyright">
             <p>Site desenvolvido por Yuri Rocha | Código aberto no GitHub!</p>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
