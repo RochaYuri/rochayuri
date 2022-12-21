@@ -1,38 +1,71 @@
 # Portifolio
 
 
-   **===== PORTUGUÊS =====**
-   
-   
-Olá!
+   <div id="container" align="center">
+  <div id="header">
+    <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+  </div>
+  <br>
+  <div id="badges">
+    <a href="https://linkedin.com/in/rocha-yuri">
+      <img src="https://img.shields.io/badge/LinkedIn-darkblue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+    </a>
+    <a href="https://rochayuri.github.io/Portifolio/">
+      <img src="https://img.shields.io/badge/Portfolio-9cf?style=for-the-badge&logo=microsoftacademic&logoColor=white" alt="Portfolio Badge"/>
+    </a>
+    <a href="https://instagram.com/rochayurii">
+      <img src="https://img.shields.io/badge/Instagram-blueviolet?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Badge"/>
+    </a>
+    <a href="https://facebook.com/rochayurii">
+      <img src="https://img.shields.io/badge/Facebook-informational?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook Badge"/>
+    </a>
+  </div>
+  <img src="https://komarev.com/ghpvc/?username=rochayuri&style=flat-square&color=blue" alt=""/>
+  <h1>
+    Eai, tranquilo?
+    <img src="https://media.giphy.com/media/3ZFQkGvyIoV1tyEPpk/giphy.gif" width="30px"/>
+  </h1>
+  <div>
+    <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300"/>
+  </div> 
+ </div
+  
+---
+### :man_technologist: Sobre mim :
 
-Este é meu projeto de Portifolio, um site que me representa e apresenta os projetos e habilidades que possuo!
-O código deste projeto é aberto, porém NÃO permitido para fins comerciais. Sinta-se à vontade para utilizar o código, perosnalizá-lo à você, e até melhorá-lo!
-Para ver todos os efeitos e transições funcionando, clone o repositório e execute-o em sua área de trabalho.
-Minhas redes sociais e meios de contato:
+Sou um <img src="https://media.giphy.com/media/IauL6LvGNlT3ffhcqq/giphy.gif" width="30"> desenvolvedor do Brasil <img src="https://media.giphy.com/media/YMw8yNdrBTpuLuzXmO/giphy.gif" width="50">
+  
+- :telescope: Trabalho como Suporte Técnico na Unimed Sorocaba.
 
-Linkedin: linkedin.com/in/rocha-yuri
-Instagram: intagram.com/rochayurii
-Facebook: facebook.com/rochayurii
-E-mail: rochayuri.dev@gmail.com
+- :seedling: Estudo front-end e back-end para me tornar um desenvolvedor FullStack.
 
-Obrigado pela atenção, e volte sempre!
+- :zap: No meu tempo livre, crio projetos para praticar o que aprendi e passo tempo com a família.
 
+- :mailbox:Como me contatar: [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://linkedin.com/in/rocha-yuri)
 
+---
 
-   **===== ENGLISH =====**
+### :hammer_and_wrench: Linguagens e ferramentas :
+  <div>
+    <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain.svg" title="HTML" alt="HTML" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg" title="CSS" alt="CSS" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-plain.svg" title="SQL" alt="SQL" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/windows8/windows8-original.svg" title="Windows" alt="Windows" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/linux/linux-plain.svg" title="Linux" alt="Linux" width="40" height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-plain.svg" title="Git" alt="Git" width="40" height="40"/>&nbsp;
+</div>
 
+---
 
-Hi!
+### :fire: My Stats :
+  
+  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rochayuri&theme=dark&background=000000)](https://git.io/streak-stats)
+  <br>
+  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rochayuri&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
+  
 
-This is my Portfolio project, a website that represents me and presents the projects and skills I have!
-The code of this project is open, but NOT allowed for commercial purposes. Feel free to use the code, customize it for yourself, and even improve it!
-To see all the effcts and transitions working, clone the repository and run it in your desktop
-My social networks and means of contact:
-
-Linkedin: linkedin.com/in/rocha-yuri
-Instagram: intagram.com/rochayurii
-Facebook: facebook.com/rochayurii
 Email: rockyuri.dev@gmail.com
 
 Thank you for your attention, and come back often!
