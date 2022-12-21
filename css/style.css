@@ -73,6 +73,8 @@ body {
     padding-top: 10rem;
     height: 93vh;
     font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+    min-height: 850px;
+    max-height: 9500px;
 }
 
 .picture img {
@@ -322,7 +324,7 @@ body {
 }
 
 .projects img {
-    width: 80px;
+    width: 110px;
     border-radius: 50px;
     transition: 0.4s;
 }
@@ -454,6 +456,40 @@ body {
     }
 }
 
+@media screen and (min-width: 1921px) {
+
+    .bibliography {
+        padding: 50px;
+        width: 100vw;
+        min-height: 850px;
+        max-height: 9500px;
+    }
+
+    .projectsContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "gk lb lm at1"
+        "gk cb1 am1 at1"
+        "gk cb2 am2 at2"
+        "gk rb rm at2";
+        align-items: center;
+        width: 85%;
+        height: 1250px;
+        padding: 50px;
+        background-image: url("../images/pitch.svg");
+        background-size: contain;
+        background-repeat: round;
+        margin: auto;
+    }
+
+    .projects img {
+        width: 140px;
+        border-radius: 50px;
+        transition: 0.4s;
+    }
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
 
     .header {
@@ -461,27 +497,22 @@ body {
     }
 
     .mainContainer {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "bibliography bibliography"
-        "projects projects";
         width: 100vw;
     }
 
     .bibliography {
         grid-area: bibliography;
-        padding: 50px;
+        padding: 40px;
         margin-bottom: 0;
+        min-height: 450px;
+        max-height: 500px;
+    }
+
+    #introduction p {
+        font-size: 16px;
     }
 
     .abilitiesContentContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "skillImage skillImage"
-        "skillClassification skillClassification";
         max-width: 200px;
         gap: 0px;
     }
@@ -507,7 +538,7 @@ body {
 
     .projects {
         grid-area: projects;
-        margin-top: -15%;
+        margin: 0;
     }
 
     .projectsContainer {
@@ -516,6 +547,20 @@ body {
 }
 
 @media screen and (min-width: 729px) and (max-width: 1024px) {
+    
+    .bibliography {
+        min-height: 630px;
+        max-height: 750px;
+    }
+
+    .picture {
+        margin: 20px;
+    }
+
+    .abilities {
+        padding: 35px;
+    }
+    
     .abilitiesContentContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -562,10 +607,20 @@ body {
         align-items: center;
         justify-content: center;
         padding: 40px;
+        min-height: 630px;
+        max-height: 750px;
+    }
+
+    .picture {
+        margin: 20px;
     }
 
     #introduction {
         font-size: 15px;
+    }
+
+    .abilities {
+        padding: 35px;
     }
 
     .abilitiesList li .abilitiesContentContainer {
@@ -719,7 +774,8 @@ body {
         align-items: center;
         margin-bottom: 30px;
         padding: 15px;
-        min-height: 800px;
+        min-height: 650px;
+        max-height: 750px;
     }
 
     #introduction {
@@ -902,7 +958,8 @@ body {
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
-        min-height: 800px;
+        min-height: 650px;
+        max-height: 850px;
         padding: 15px;
     }
 
