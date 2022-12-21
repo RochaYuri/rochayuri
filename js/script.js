@@ -24,6 +24,7 @@ if (width < 768) {
     rb.remove();
     lm.remove();
     rm.remove();
+    abilitiesSkillContainer.remove()
 }
 
 if (width < 480) {

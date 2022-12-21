@@ -571,6 +571,10 @@ body {
         gap: 0px;
     }
 
+    .abilitiesSkillContainer {
+        display: none;
+    }
+
     .abilitiesList li .abilitiesContentContainer:before {
         content: '';
         position: absolute;
