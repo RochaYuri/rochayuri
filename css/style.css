@@ -461,8 +461,8 @@ body {
     .bibliography {
         padding: 50px;
         width: 100vw;
-        min-height: 850px;
-        max-height: 9500px;
+        min-height: 900px;
+        max-height: 1050px;
     }
 
     .projectsContainer {
@@ -490,20 +490,20 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+@media screen and (min-width: 1025px) and (max-width: 1301px) {
 
     .header {
         padding: 3%;
     }
 
     .mainContainer {
-        width: 100vw;
+        width: 98vw;
     }
 
     .bibliography {
         grid-area: bibliography;
         padding: 40px;
-        margin-bottom: 0;
+        margin: 0;
         min-height: 450px;
         max-height: 500px;
     }
@@ -513,7 +513,12 @@ body {
     }
 
     .abilitiesContentContainer {
-        max-width: 200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "skillImage skillImage"
+        "skillClassification skillClassification";
+        max-width: 180px;
         gap: 0px;
     }
 
@@ -524,7 +529,7 @@ body {
         height: 30px;
         background: #222336;
         top: -10px;
-        left: 115px;
+        left: 105px;
         transform: rotate(45deg);
     }
 
@@ -546,11 +551,15 @@ body {
     }
 }
 
-@media screen and (min-width: 729px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     
     .bibliography {
-        min-height: 630px;
-        max-height: 750px;
+        min-height: 550px;
+        max-height: 650px;
+    }
+
+    #introduction {
+        font-size: 18px;
     }
 
     .picture {
@@ -559,6 +568,12 @@ body {
 
     .abilities {
         padding: 35px;
+    }
+
+    .abilitiesImg {
+        width: 30px;
+        margin: 5px;
+        transition: 0.3s;
     }
     
     .abilitiesContentContainer {
@@ -571,25 +586,32 @@ body {
         gap: 0px;
     }
 
-    .abilitiesSkillContainer {
-        display: none;
+    .abilitiesList li .abilitiesContentContainer {
+        position: absolute;
+        top: 60px;
+        width: 500px;
+        background: #222336;
+        padding: 20px;
+        border-radius: 15px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateX(-50%) translateY(-50px);
     }
 
     .abilitiesList li .abilitiesContentContainer:before {
         content: '';
         position: absolute;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background: #222336;
         top: -10px;
-        left: 90px;
+        left: 85px;
         transform: rotate(45deg);
     }
 
-    .abilitiesImg {
-        width: 45px;
-        margin: 5px;
-        transition: 0.3s;
+    .abilitiesSkillContainer {
+        display: none;
     }
 
     .projectsContainer {
@@ -611,7 +633,7 @@ body {
         align-items: center;
         justify-content: center;
         padding: 40px;
-        min-height: 630px;
+        min-height: 680px;
         max-height: 750px;
     }
 
@@ -625,6 +647,16 @@ body {
 
     .abilities {
         padding: 35px;
+    }
+
+    .abilitiesContentContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "skillImage skillImage"
+        "skillClassification skillClassification";
+        max-width: 150px;
+        gap: 0px;
     }
 
     .abilitiesList li .abilitiesContentContainer {
@@ -642,8 +674,8 @@ body {
     .abilitiesList li .abilitiesContentContainer:before {
         content: '';
         position: absolute;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background: #222336;
         top: -10px;
         left: 82px;
@@ -675,6 +707,10 @@ body {
         justify-content: center;
         padding: 10px;
         font-size: 15px;
+    }
+
+    .abilitiesSkillContainer {
+        display: none;
     }
 
     .projectsContainer {
