@@ -47,6 +47,20 @@ body {
     color:#333449;
 }
 
+.cvButton {
+    background-color: #c5c5d4;
+    border: 3px solid #333449;
+}
+
+.cvButton:hover {
+    background-color: #333449;
+    border: 3px solid #333449;
+}
+
+.cvButton a:hover {
+    color: #c5c5d4;
+}
+
 .logo {
     font-size: 50px;
     font-family: 'Comfortaa', cursive;
@@ -627,6 +641,10 @@ body {
         align-items: center;
     }
 
+    .cv {
+        order: 2;
+    }
+
     .bibliography {
         display: flex;
         flex-wrap: wrap;
@@ -797,6 +815,10 @@ body {
 
     .header a {
         font-size: 25px;
+    }
+
+    .cv {
+        order: 2;
     }
 
     .mainContainer {
@@ -982,6 +1004,10 @@ body {
 
     .header a {
         font-size: 18px;
+    }
+
+    .cv {
+        order: 2;
     }
 
     .mainContainer {
