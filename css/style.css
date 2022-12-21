@@ -551,6 +551,7 @@ body {
 @media screen and (min-width: 421px) and (max-width: 768px) {
 
     .header {
+        height: auto;
         justify-content: center;
         align-items: center;
     }
@@ -717,6 +718,7 @@ body {
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
+        padding: 15px;
         min-height: 800px;
     }
 
@@ -759,6 +761,7 @@ body {
         "am1 am2"
         "at1 at1";
         padding: 20px 50px;
+        padding-top: 0px;
         gap: 3px;
         max-height: 300px;
         max-width: 230px;
@@ -767,7 +770,7 @@ body {
     }
 
     .projectsContainer img {
-        width: 40px;
+        width: 45px;
     }
 
     .projectsContainer p {
@@ -900,6 +903,7 @@ body {
         align-items: center;
         margin-bottom: 30px;
         min-height: 800px;
+        padding: 15px;
     }
 
     #introduction {
@@ -941,6 +945,7 @@ body {
         "am1 am2"
         "at1 at1";
         padding: 20px 50px;
+        padding-top: 0px;
         gap: 3px;
         max-height: 300px;
         max-width: 230px;
@@ -949,7 +954,7 @@ body {
     }
 
     .projectsContainer img {
-        width: 40px;
+        width: 45px;
     }
 
     .projectsContainer p {
