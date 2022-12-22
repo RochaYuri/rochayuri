@@ -64,8 +64,3 @@ Sou um <img src="https://media.giphy.com/media/IauL6LvGNlT3ffhcqq/giphy.gif" wid
   [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=rochayuri&theme=dark&background=000000)](https://git.io/streak-stats)
   <br>
   [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rochayuri&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
-  
-
-Email: rockyuri.dev@gmail.com
-
-Thank you for your attention, and come back often!
