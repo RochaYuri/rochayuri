@@ -53,7 +53,7 @@ check.addEventListener('change', () => {
     document.querySelector('#github').classList.toggle('dark');
 })
 
-function trocaImg(){
+function trocaImg() {
    if (darktheme == 0) {
     github.src = "./images/githubdark.svg";
     darktheme = 1;
@@ -61,4 +61,8 @@ function trocaImg(){
     github.src = "./images/github.svg";
     darktheme = 0;
    }
+}
+
+function emailSent() {
+    window.location.replace("https://google.com");
 }
