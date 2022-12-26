@@ -51,5 +51,5 @@ check.addEventListener('change', () => {
 })
 
 function trocaImg(){
-    github.src = "./images/facebook.svg"
+    github.src = "./images/githubdark.svg"
 }
