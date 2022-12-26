@@ -11,10 +11,7 @@ const abilitiesSkillContainer = document.querySelector(".abilitiesSkillContent")
 const abilitiesContentContainer = document.querySelector(".abilitiesContentContainer");
 const check = document.getElementById('check');
 var github = document.getElementById("github");
-
-function trocaTexto() {
-    document.querySelector("#paragrafo").textContent = "Tetse";
-}
+var darktheme = 0;
 
 if (width < 1200) {
     abilitiesSkillContainer.remove();
@@ -51,5 +48,11 @@ check.addEventListener('change', () => {
 })
 
 function trocaImg(){
-    github.src = "./images/githubdark.svg"
+   if (darktheme == 0) {
+    github.src = "./images/githubdark.svg";
+    darktheme = 1;
+   } else if (darktheme == 1) {
+    github.src = "./images/github.svg";
+    darktheme = 0;
+   }
 }
