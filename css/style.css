@@ -288,6 +288,7 @@ body {
     "gk cb2 am2 at2"
     "gk rb rm at2";
     align-items: center;
+    gap: 0 40px;
     width: 85%;
     height: 950px;
     padding: 50px;
@@ -299,6 +300,7 @@ body {
 
 .projectName {
     text-shadow: 0.1em 0.0001em 0.5em #222336;
+    
     font-weight: 700;
 }
 
@@ -629,10 +631,15 @@ body {
 
     .projectsContainer {
         max-height: 550px;
+        gap: 0;
+    }
+
+    .projectsContainer img {
+        width: 85px;
     }
 }
 
-@media screen and (min-width: 421px) and (max-width: 768px) {
+@media screen and (min-width: 581px) and (max-width: 768px) {
 
     .header {
         height: auto;
@@ -802,7 +809,7 @@ body {
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 480px) {
+@media screen and (min-width: 321px) and (max-width: 580px) {
 
     .header {
         height: auto;
@@ -862,6 +869,10 @@ body {
 
     .projects {
         align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 600px;
+        margin: 0;
     }
 
     .projectsTitle {
@@ -880,7 +891,7 @@ body {
         padding: 20px 50px;
         padding-top: 0px;
         gap: 3px;
-        max-height: 300px;
+        max-height: 350px;
         max-width: 230px;
         background-image: url("../images/pitch2.svg");
         background-size: cover;
@@ -948,13 +959,6 @@ body {
         display: none;
     }
 
-    .projects {
-        display: flex;
-        flex-wrap: wrap;
-        max-height: 600px;
-        margin: 0;
-    }
-
     .footer {
         display: flex;
         flex-wrap: wrap;
@@ -988,7 +992,7 @@ body {
     }
 
 }
-@media screen and (min-width: 280px) and (max-width: 320px) {
+@media screen and (max-width: 320px) {
     .header {
         height: auto;
         display: flex;
@@ -1069,7 +1073,7 @@ body {
         padding: 20px 50px;
         padding-top: 0px;
         gap: 3px;
-        max-height: 300px;
+        max-height: 350px;
         max-width: 230px;
         background-image: url("../images/pitch2.svg");
         background-size: cover;
