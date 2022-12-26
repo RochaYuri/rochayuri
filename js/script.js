@@ -62,7 +62,3 @@ function trocaImg() {
     darktheme = 0;
    }
 }
-
-function emailSent() {
-    window.location.replace("https://google.com");
-}
