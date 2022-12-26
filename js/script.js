@@ -1,6 +1,8 @@
+// Tamanho da tela do usuário
 var height = window.screen.height;
 var width = window.screen.width;
 
+// declarações de variáveis para manipulação do DOM
 const lb = document.querySelector(".lb");
 const cb2 = document.querySelector(".cb2");
 const rb = document.querySelector(".rb");
@@ -12,6 +14,8 @@ const abilitiesContentContainer = document.querySelector(".abilitiesContentConta
 const check = document.getElementById('check');
 var github = document.getElementById("github");
 var darktheme = 0;
+
+// removendo conteudos com o tamanho das telas
 
 if (width < 1200) {
     abilitiesSkillContainer.remove();
@@ -31,6 +35,8 @@ if (width < 480) {
     abilitiesSkillContainer.remove()
     abilitiesContentContainer.remove();
 }
+
+// Manipulação de cores para o tema dark
 
 check.addEventListener('change', () => {
     document.body.classList.toggle('dark');

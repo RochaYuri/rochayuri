@@ -9,34 +9,31 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="shortcut icon" href="./images/portfolio.png" type="image/x-icon" />
         <title>Portifólio Yuri Rocha</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Space+Grotesk&family=Teko:wght@300;700&display=swap');
-        </style>
     </head>
     <body>
         <header class="header">
-            <p class="logo">Yuri Rocha</p>
+            <p class="logo">Yuri Rocha</p> <!--Logo do portifólio-->
             <div class="cv">
-                <button class="navButton cvButton"><a href="https://drive.google.com/file/d/10hBuF2GaZ7AZBYOwopdBuleJIrIhRGNG/view?usp=sharing" target="_blank" download="CV-Yuri">Baixar CV</a></button>
+                <button class="navButton cvButton"><a href="https://drive.google.com/file/d/10hBuF2GaZ7AZBYOwopdBuleJIrIhRGNG/view?usp=sharing" target="_blank" download="CV-Yuri">Baixar CV</a></button> <!--Botão para baixar o CV-->
             </div>
             <div class="theme">
-                <input type="checkbox" class="checkbox" id="check" onclick="trocaImg()"/>
+                <input type="checkbox" class="checkbox" id="check" onclick="trocaImg()"/> <!--script para alterar a imagem do github no tema dark-->
                 <label class="label" for="check">
-                    <i class="fas fa-moon"></i> 
-                    <i class="fas fa-sun"></i>
-                    <div class="ball"></div>
+                    <i class="fas fa-moon"></i>  <!--ícone lua-->
+                    <i class="fas fa-sun"></i> <!--ícone sol-->
+                    <div class="ball"></div> <!--círculo que fica em cima do ícone que está "desligado"-->
                 </label>
             </div>
-            <div class="navbar">
+            <div class="navbar"> <!--botões da navbar-->
                 <button class="navButton" id="navButton1"><a id="navLink1" href="#start">Início</a></button>
                 <button class="navButton" id="navButton2"><a id="navLink2" href="#projects">Projetos</a></button>
                 <button class="navButton" id="navButton3"><a id="navLink3" href="#contacts">Contato</a></button>
             </div>
         </header>
         <div class="mainContainer">
-            <section class="bibliography" id="start">
+            <section class="bibliography" id="start"> <!--seção de bibliografia-->
                 <div class="picture">
-                    <img src="./images/yuri.svg" alt="foto-yuri-rocha">
+                    <img src="./images/yuri.svg" alt="foto-yuri-rocha"> <!--foto-->
                 </div>
                 <div id="introduction">
                     <h3>Olá! Como vai?</h3>
@@ -45,7 +42,7 @@
                     Acredito que a tecnologia tem o poder necessário de mudar a vida das pessoas, através do acesso à informação.
                     Siga em frente! Aproveite o tempo que me visita e, caso goste, me contate!</p>
                 </div>
-                <div class="abilities">
+                <div class="abilities"> <!--Aqui estão as habilidades. Ao passar o mouse por cima delas, mostrará as competências abaixo-->
                     <h2>Habilidades</h2>
                     <ul class="abilitiesList">
                         <li class="html5">
@@ -54,11 +51,11 @@
                                 <div class ="skillImage">
                                     <img src="./images/html5.svg" alt="html5">
                                 </div>
-                                <div class="skillClassification">
+                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
                                     <h3 class="skillLevelTitle">HTML</h3>
-                                    <p class="skillLevel">★★★★☆</p>
+                                    <p class="skillLevel">★★★★☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
                                     <p class="abilitiesClassification">Avançado</p>
-                                </div>
+                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
                                 <div class="abilitiesSkillContainer">
                                     <h3 class="abilitiesSkillTitle">Competências</h3>
                                     <ul class="abilitiesSkill1">
@@ -80,11 +77,11 @@
                                 <div class ="skillImage">
                                     <img src="./images/css3.svg" alt="css3">
                                 </div>
-                                <div class="skillClassification">
+                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
                                     <h3 class="skillLevelTitle">CSS</h3>
-                                    <p class="skillLevel">★★★☆☆</p>
+                                    <p class="skillLevel">★★★☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
                                     <p class="abilitiesClassification">Intermediário</p>
-                                </div>
+                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
                                 <div class="abilitiesSkillContainer">
                                     <h3 class="abilitiesSkillTitle">Competências</h3>
                                     <ul class="abilitiesSkill1">
@@ -106,11 +103,11 @@
                                 <div class ="skillImage">
                                     <img src="./images/javascript.svg" alt="javascript">
                                 </div>
-                                <div class="skillClassification">
+                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
                                     <h3 class="skillLevelTitle">JavaScript</h3>
-                                    <p class="skillLevel">★★☆☆☆</p>
+                                    <p class="skillLevel">★★☆☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
                                     <p class="abilitiesClassification">Iniciante</p>
-                                </div>
+                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
                                 <div class="abilitiesSkillContainer">
                                     <h3 class="abilitiesSkillTitle">Competências</h3>
                                     <ul class="abilitiesSkill1">
@@ -133,11 +130,11 @@
                                 <div class ="skillImage">
                                     <img src="./images/python.svg" alt="python">
                                 </div>
-                                <div class="skillClassification">
+                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
                                     <h3 class="skillLevelTitle">Python</h3>
-                                    <p class="skillLevel">★★★☆☆</p>
+                                    <p class="skillLevel">★★★☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
                                     <p class="abilitiesClassification">Intermediário</p>
-                                </div>
+                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
                                 <div class="abilitiesSkillContainer">
                                     <h3 class="abilitiesSkillTitle">Competências</h3>
                                     <ul class="abilitiesSkill1">
@@ -161,11 +158,11 @@
                                 <div class ="skillImage">
                                     <img src="./images/postgresql.svg" alt="postgresql">
                                 </div>
-                                <div class="skillClassification">
+                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
                                     <h3 class="skillLevelTitle">SQL</h3>
-                                    <p class="skillLevel">★★☆☆☆</p>
+                                    <p class="skillLevel">★★☆☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
                                     <p class="abilitiesClassification">Inciante</p>
-                                </div>
+                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
                                 <div class="abilitiesSkillContainer">
                                     <h3 class="abilitiesSkillTitle">Competências</h3>
                                     <ul class="abilitiesSkill1">
@@ -187,11 +184,11 @@
                                 <div class ="skillImage">
                                     <img src="./images/git.svg" alt="git">
                                 </div>
-                                <div class="skillClassification">
+                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
                                     <h3 class="skillLevelTitle">Git</h3>
-                                    <p class="skillLevel">★★☆☆☆</p>
+                                    <p class="skillLevel">★★☆☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
                                     <p class="abilitiesClassification">Inciante</p>
-                                </div>
+                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
                                 <div class="abilitiesSkillContainer">
                                     <h3 class="abilitiesSkillTitle">Competências</h3>
                                     <ul class="abilitiesSkill1">
@@ -212,11 +209,11 @@
                                 <div class ="skillImage">
                                     <img src="./images/linux.svg" alt="linux">
                                 </div>
-                                <div class="skillClassification">
+                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
                                     <h3 class="skillLevelTitle">Linux</h3>
-                                    <p class="skillLevel">★★☆☆☆</p>
+                                    <p class="skillLevel">★★☆☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
                                     <p class="abilitiesClassification">Iniciante</p>
-                                </div>
+                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
                                 <div class="abilitiesSkillContainer">
                                     <ul class="abilitiesSkill1">
                                     </ul>
@@ -231,11 +228,11 @@
                                 <div class ="skillImage">
                                     <img src="./images/windows.svg" alt="windows">
                                 </div>
-                                <div class="skillClassification">
+                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
                                     <h3 class="skillLevelTitle">Windows</h3>
-                                    <p class="skillLevel">★★★★☆</p>
+                                    <p class="skillLevel">★★★★☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
                                     <p class="abilitiesClassification">Avançado</p>
-                                </div>
+                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
                                 <div class="abilitiesSkillContainer">
                                     <ul class="abilitiesSkill1">
                                     </ul>
@@ -252,47 +249,47 @@
                     <h2>Projetos</h2>
                 </div>
                 <div class="projectsContainer">
-                    <div class="gk">
+                    <div class="gk"> <!--goleiro-->
                         <a target="_blank" href="https://rochayuri.github.io/linguagens-desenvolvimento/index.html"><img src="./images/linguagens-desenvolvimento.svg" alt="Linguagens de Desenvolvimento"></a>
                         <p class="projectName">Linguagens de Desenvolvimento.</p>
                     </div>
-                    <div class="lb">
+                    <div class="lb"> <!--lateral esquerdo-->
                         <a href=""><img src="./images/production.svg" alt=""></a>
                         <p class="projectName">Em produção.</p>
                     </div>
-                    <div class="cb1">
+                    <div class="cb1"> <!--zagueiro esquerdo-->
                         <a href=""><img src="./images/production.svg" alt=""></a>
                         <p class="projectName">Em produção.</p>
                     </div>
-                    <div class="cb2">
+                    <div class="cb2"> <!--zagueiro direito-->
                         <a href=""><img src="./images/production.svg" alt=""></a>
                         <p class="projectName">Em produção.</p>
                     </div>
-                    <div class="rb">
+                    <div class="rb"> <!--lateral direito-->
                         <a href=""><img src="./images/production.svg" alt=""></a>
                         <p class="projectName">Em produção.</p>
                     </div>
-                    <div class="lm">
+                    <div class="lm"> <!--ala esquerdo-->
                         <a href=""><img src="./images/production.svg" alt=""></a>
                         <p class="projectName">Em produção.</p>
                     </div>
-                    <div class="am1">
+                    <div class="am1"> <!--meia-atacante esquerdo-->
                         <a href=""><img src="./images/production.svg" alt=""></a>
                         <p class="projectName">Em produção.</p>
                     </div>
-                    <div class="am2">
+                    <div class="am2"> <!--meia-atacante direito-->
                         <a href=""><img src="./images/production.svg" alt=""></a>
                         <p class="projectName">Em produção.</p>
                     </div>
-                    <div class="rm">
+                    <div class="rm"> <!--ala direto-->
                         <a href=""><img src="./images/production.svg" alt=""></a>
                         <p class="projectName">Em produção.</p>
                     </div>
-                    <div class="at1">
+                    <div class="at1"> <!--atacante esquerdo-->
                         <a href=""><img src="./images/production.svg" alt=""></a>
                         <p class="projectName">Em produção.</p>
                     </div>
-                    <div class="at2">
+                    <div class="at2"> <!--atacante direito-->
                         <a href=""><img src="./images/production.svg" alt=""></a>
                         <p class="projectName">Em produção.</p>
                     </div>
