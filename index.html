@@ -19,10 +19,18 @@
             <div class="cv">
                 <button class="navButton cvButton"><a href="https://drive.google.com/file/d/10hBuF2GaZ7AZBYOwopdBuleJIrIhRGNG/view?usp=sharing" target="_blank" download="CV-Yuri">Baixar CV</a></button>
             </div>
+            <div class="theme">
+                <input type="checkbox" class="checkbox" id="check" onclick="trocaImg()"/>
+                <label class="label" for="check">
+                    <i class="fas fa-moon"></i> 
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
             <div class="navbar">
-                <button class="navButton"><a href="#start">Início</a></button>
-                <button class="navButton"><a href="#projects">Projetos</a></button>
-                <button class="navButton"><a href="#contacts">Contato</a></button>
+                <button class="navButton" id="navButton1"><a id="navLink1" href="#start">Início</a></button>
+                <button class="navButton" id="navButton2"><a id="navLink2" href="#projects">Projetos</a></button>
+                <button class="navButton" id="navButton3"><a id="navLink3" href="#contacts">Contato</a></button>
             </div>
         </header>
         <div class="mainContainer">
@@ -294,13 +302,13 @@
         <footer class="footer" id="contacts">
             <div class="socialMedias">
                 <a target="_blank" href="https://linkedin.com/in/rocha-yuri/"><img src="./images/linkedin.svg" alt="linkedin"></a>
-                <a target="_blank" href="https://github.com/RochaYuri"><img src="./images/github.svg" alt="github"></a>
+                <a target="_blank" href="https://github.com/RochaYuri"><img src="./images/github.svg" alt="github" id="github"></a>
                 <a target="_blank" href="https://instagram.com/rochayurii/"><img src="./images/instagram.svg" alt="instagram"></a>
                 <a target="_blank" href="https://facebook.com/RochaYurii/"><img src="./images/facebook.svg" alt="facebook"></a>
             </div>
             <div class="e-mail">
                 <form action="https://formsubmit.co/rochayuri.dev@gmail.com" method="POST">
-                    <h3 class="formTitle">Me envie um e-mail!</h3>
+                    <h3 class="formTitle" id="formTitle">Me envie um e-mail!</h3>
                     <input type="text" placeholder="Nome" name="name" id="formName" required><br>
                     <input type="email" placeholder="E-mail" name="email" id="email" required><br>
                     <textarea name="message" placeholder="Sua mensagem.." id="formMessage" required></textarea><br>
@@ -311,8 +319,9 @@
             </div>
         </footer>
         <div class="copyright">
-            <p>Site desenvolvido por Yuri Rocha | Código aberto no GitHub!</p>
+            <p id="copyright">Site desenvolvido por Yuri Rocha | Código aberto no GitHub!</p>
         </div>
         <script src="js/script.js"></script>
+        <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
     </body>
 </html>

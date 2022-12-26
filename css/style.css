@@ -9,6 +9,11 @@ html {scroll-behavior: smooth;}
 body {
     background-image: url("../images/background.svg");
     background-size: cover;
+    transition: background 0.1s linear;
+}
+
+body.dark {
+    background-image: url('../images/background-dark.svg');
 }
 
 .header {
@@ -20,6 +25,21 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: 'Comfortaa', cursive;
+    color: #00000085;
+    transition: 0.1s;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo.dark {
+    color: #c5c4c4;
 }
 
 .navButton {
@@ -47,8 +67,24 @@ body {
     color:#333449;
 }
 
+/* dark theme */
+
+#navLink1.dark, #navLink2.dark, #navLink3.dark {
+    color: #c5c4c4;
+}
+
+#navLink1.dark:hover, #navLink2.dark:hover, #navLink3.dark:hover {
+    color: #333449;
+}
+
+#navButton1.dark:hover, #navButton2.dark:hover, #navButton3.dark:hover {
+    border-color: #333449
+}
+
+/* dark theme end */
+
 .cvButton {
-    background-color: #c5c5d4;
+    background-color: #c4c4d4;
     border: 3px solid #333449;
 }
 
@@ -61,20 +97,65 @@ body {
     color: #c5c5d4;
 }
 
-.logo {
-    font-size: 50px;
-    font-family: 'Comfortaa', cursive;
-    color: rgba(0, 0, 0, 0.521);
-    transition: 0.1s;
+.checkbox {
+    opacity: 0;
+    position: absolute;
 }
 
-.logo:hover {
+.theme {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.label {
+    background-color: #c5c5d4;
+    border-radius: 50px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+    margin: 15px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label {
+    background-color: #067a06;
+}
+
+.checkbox:checked + label .ball {
+    transform: translateX(24px);
+    background-color: #15d115;
+}
+
+.fa-moon {
+    color: #080868c0;
+}
+
+.fa-sun {
+    color: #5a5c04ab;
 }
 
 .mainContainer {
     display: flex;
     flex-wrap: wrap;
+    animation: transitionIn 1.5s;
 }
 
 .bibliography {
@@ -367,6 +448,14 @@ body {
     opacity: 65%;
 }
 
+#github.dark {
+    mask-image: url('../images/facebook.svg');
+}
+
+#formTitle.dark {
+    color: #c5c4c4;
+}
+
 .footer form {
     font-family: 'Space Grotesk', Arial;
     font-size: 16px;
@@ -409,6 +498,15 @@ body {
     background-color: rgba(118, 189, 190, 0.658);
 }
 
+#button.dark {
+    color: #c5c4c4;
+}
+
+#button.dark:hover {
+    background-color: #c5c4c4;
+    color: #222336;
+}
+
 .copyright {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -418,8 +516,8 @@ body {
     background-color: rgba(75, 74, 74, 0.582);
 }
 
-.mainContainer {
-    animation: transitionIn 1.5s;
+#copyright.dark {
+    color: #c5c4c4;
 }
 
 /* PÁGINA DE ENVIO DE E-MAIL */
@@ -567,8 +665,18 @@ body {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .header {
+        height: 20vh;
+        justify-content: space-around;
+    }
+
+    .theme {
+        order: 3;
+    }
     
     .bibliography {
+        padding: 0px;
         min-height: 550px;
         max-height: 650px;
     }
@@ -629,6 +737,10 @@ body {
         display: none;
     }
 
+    .projects {
+        margin: 0;
+    }
+
     .projectsContainer {
         max-height: 550px;
         gap: 0;
@@ -649,6 +761,11 @@ body {
 
     .cv {
         order: 2;
+    }
+
+    .theme {
+        order: 3;
+        transform: scale(0.8);
     }
 
     .bibliography {
@@ -825,6 +942,11 @@ body {
 
     .cv {
         order: 2;
+    }
+
+    .theme {
+        order: 3;
+        transform: scale(0.7);
     }
 
     .mainContainer {
@@ -1011,6 +1133,11 @@ body {
 
     .cv {
         order: 2;
+    }
+
+    .theme {
+        order: 3;
+        transform: scale(0.6);
     }
 
     .mainContainer {

@@ -8,8 +8,9 @@ const lm = document.querySelector(".lm");
 const rm = document.querySelector(".rm");
 const at2 = document.querySelector(".at2");
 const abilitiesSkillContainer = document.querySelector(".abilitiesSkillContent");
-const abilitiesContentContainer = document.querySelector(".abilitiesContentContainer")
-
+const abilitiesContentContainer = document.querySelector(".abilitiesContentContainer");
+const check = document.getElementById('check');
+var github = document.getElementById("github");
 
 function trocaTexto() {
     document.querySelector("#paragrafo").textContent = "Tetse";
@@ -24,7 +25,7 @@ if (width < 768) {
     rb.remove();
     lm.remove();
     rm.remove();
-    abilitiesSkillContainer.remove()
+    abilitiesSkillContainer.remove();
 }
 
 if (width < 480) {
@@ -32,4 +33,23 @@ if (width < 480) {
     at2.remove();
     abilitiesSkillContainer.remove()
     abilitiesContentContainer.remove();
+}
+
+check.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+    document.querySelector('.logo').classList.toggle('dark');
+    document.querySelector('#navLink1').classList.toggle('dark');
+    document.querySelector('#navLink2').classList.toggle('dark');
+    document.querySelector('#navLink3').classList.toggle('dark');
+    document.querySelector('#navButton1').classList.toggle('dark');
+    document.querySelector('#navButton2').classList.toggle('dark');
+    document.querySelector('#navButton3').classList.toggle('dark');
+    document.querySelector('#button').classList.toggle('dark');
+    document.querySelector('#formTitle').classList.toggle('dark');
+    document.querySelector('#copyright').classList.toggle('dark');
+    document.querySelector('#github').classList.toggle('dark');
+})
+
+function trocaImg(){
+    github.src = "./images/facebook.svg"
 }
