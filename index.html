@@ -1,323 +1,363 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Space+Grotesk&family=Teko:wght@300;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="shortcut icon" href="./images/portfolio.png" type="image/x-icon" />
-        <title>Portifólio Yuri Rocha</title>
-    </head>
-    <body>
-        <header class="header">
-            <p class="logo">Yuri Rocha</p> <!--Logo do portifólio-->
-            <div class="cv">
-                <button class="navButton cvButton"><a href="https://drive.google.com/file/d/10hBuF2GaZ7AZBYOwopdBuleJIrIhRGNG/view?usp=sharing" target="_blank" download="CV-Yuri">Baixar CV</a></button> <!--Botão para baixar o CV-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Space+Grotesk&family=Teko:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="./images/portfolio.png" type="image/x-icon" />
+    <title>Portifólio Yuri Rocha</title>
+</head>
+
+<body>
+    <header class="header">
+        <p class="logo">Yuri Rocha</p> <!--Logo do portifólio-->
+        <div class="cv">
+            <button class="navButton cvButton"><a
+                    href="https://drive.google.com/file/d/10hBuF2GaZ7AZBYOwopdBuleJIrIhRGNG/view?usp=sharing"
+                    target="_blank" download="CV-Yuri">Baixar CV</a></button> <!--Botão para baixar o CV-->
+        </div>
+        <div class="theme">
+            <input type="checkbox" class="checkbox" id="check" onclick="trocaImg()" />
+            <!--script para alterar a imagem do github no tema dark-->
+            <label class="label" for="check">
+                <i class="fas fa-moon"></i> <!--ícone lua-->
+                <i class="fas fa-sun"></i> <!--ícone sol-->
+                <div class="ball"></div> <!--círculo que fica em cima do ícone que está "desligado"-->
+            </label>
+        </div>
+        <div class="navbar"> <!--botões da navbar-->
+            <button class="navButton" id="navButton1"><a id="navLink1" href="#start">Início</a></button>
+            <button class="navButton" id="navButton2"><a id="navLink2" href="#projects">Projetos</a></button>
+            <button class="navButton" id="navButton3"><a id="navLink3" href="#contacts">Contato</a></button>
+        </div>
+    </header>
+    <main class="mainContainer">
+        <section class="bibliography" id="start"> <!--seção de bibliografia-->
+            <div class="picture">
+                <img src="./images/yuri.svg" alt="foto-yuri-rocha"> <!--foto-->
             </div>
-            <div class="theme">
-                <input type="checkbox" class="checkbox" id="check" onclick="trocaImg()"/> <!--script para alterar a imagem do github no tema dark-->
-                <label class="label" for="check">
-                    <i class="fas fa-moon"></i>  <!--ícone lua-->
-                    <i class="fas fa-sun"></i> <!--ícone sol-->
-                    <div class="ball"></div> <!--círculo que fica em cima do ícone que está "desligado"-->
-                </label>
-            </div>
-            <div class="navbar"> <!--botões da navbar-->
-                <button class="navButton" id="navButton1"><a id="navLink1" href="#start">Início</a></button>
-                <button class="navButton" id="navButton2"><a id="navLink2" href="#projects">Projetos</a></button>
-                <button class="navButton" id="navButton3"><a id="navLink3" href="#contacts">Contato</a></button>
-            </div>
-        </header>
-        <div class="mainContainer">
-            <section class="bibliography" id="start"> <!--seção de bibliografia-->
-                <div class="picture">
-                    <img src="./images/yuri.svg" alt="foto-yuri-rocha"> <!--foto-->
-                </div>
-                <div id="introduction">
-                    <h3>Olá! Como vai?</h3>
-                    <p>Esté é meu portifólio! O lugar onde busco mostrar minhas habilidades e idéias nos projetos que criei!<br>
-                    Sou uma pessoa apaixonada por tecnologia, esportes (acho que pela forma dos projetos apresentados abaixo vai ser possível peceber.), família e jogos. <br> 
-                    Acredito que a tecnologia tem o poder necessário de mudar a vida das pessoas, através do acesso à informação.
+            <div id="introduction">
+                <h3>Olá! Como vai?</h3>
+                <p>Esté é meu portifólio! O lugar onde busco mostrar minhas habilidades e idéias nos projetos que
+                    criei!<br>
+                    Sou uma pessoa apaixonada por tecnologia, esportes (acho que pela forma dos projetos apresentados
+                    abaixo vai ser possível peceber.), família e jogos. <br>
+                    Acredito que a tecnologia tem o poder necessário de mudar a vida das pessoas, através do acesso à
+                    informação.
                     Siga em frente! Aproveite o tempo que me visita e, caso goste, me contate!</p>
-                </div>
-                <div class="abilities"> <!--Aqui estão as habilidades. Ao passar o mouse por cima delas, mostrará as competências abaixo-->
-                    <h2>Habilidades</h2>
-                    <ul class="abilitiesList">
-                        <li class="html5">
-                            <img class="abilitiesImg" src="./images/html5.svg" alt="html5">
-                            <div class="abilitiesContentContainer">
-                                <div class ="skillImage">
-                                    <img src="./images/html5.svg" alt="html5">
-                                </div>
-                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
-                                    <h3 class="skillLevelTitle">HTML</h3>
-                                    <p class="skillLevel">★★★★☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
-                                    <p class="abilitiesClassification">Avançado</p>
-                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
-                                <div class="abilitiesSkillContainer">
-                                    <h3 class="abilitiesSkillTitle">Competências</h3>
-                                    <ul class="abilitiesSkill1">
-                                        <li class="abilitiesSkillContent">• Estrutura</li>
-                                        <li class="abilitiesSkillContent">• Semântica</li>
-                                        <li class="abilitiesSkillContent">• Multimídia</li>
-                                    </ul>
-                                    <ul class="abilitiesSkill2">
-                                        <li class="abilitiesSkillContent">• Formulários</li>
-                                        <li class="abilitiesSkillContent">• Tabelas</li>
-                                        <li class="abilitiesSkillContent">• Listas</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="css3">
-                            <img class="abilitiesImg front-end" src="./images/css3.svg" alt="css">
-                            <div class="abilitiesContentContainer">
-                                <div class ="skillImage">
-                                    <img src="./images/css3.svg" alt="css3">
-                                </div>
-                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
-                                    <h3 class="skillLevelTitle">CSS</h3>
-                                    <p class="skillLevel">★★★☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
-                                    <p class="abilitiesClassification">Intermediário</p>
-                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
-                                <div class="abilitiesSkillContainer">
-                                    <h3 class="abilitiesSkillTitle">Competências</h3>
-                                    <ul class="abilitiesSkill1">
-                                        <li class="abilitiesSkillContent">• Flexbox</li>
-                                        <li class="abilitiesSkillContent">• Grid</li>
-                                        <li class="abilitiesSkillContent">• Sintaxe</li>
-                                    </ul>
-                                    <ul class="abilitiesSkill2">
-                                        <li class="abilitiesSkillContent">• Animação</li>
-                                        <li class="abilitiesSkillContent">• Elementos</li>
-                                        <li class="abilitiesSkillContent">• Seletores</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="javascript">
-                            <img class="abilitiesImg" src="./images/javascript.svg" alt="javascript">
-                            <div class="abilitiesContentContainer">
-                                <div class ="skillImage">
-                                    <img src="./images/javascript.svg" alt="javascript">
-                                </div>
-                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
-                                    <h3 class="skillLevelTitle">JavaScript</h3>
-                                    <p class="skillLevel">★★☆☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
-                                    <p class="abilitiesClassification">Iniciante</p>
-                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
-                                <div class="abilitiesSkillContainer">
-                                    <h3 class="abilitiesSkillTitle">Competências</h3>
-                                    <ul class="abilitiesSkill1">
-                                        <li class="abilitiesSkillContent">• Lógica</li>
-                                        <li class="abilitiesSkillContent">• Fundamentos</li>
-                                        <li class="abilitiesSkillContent">• Sintaxe</li>
-                                        <li class="abilitiesSkillContent">• Funções</li>
-                                    </ul>
-                                    <ul class="abilitiesSkill2">
-                                        <li class="abilitiesSkillContent">• Manipulação de DOM</li>
-                                        <li class="abilitiesSkillContent">• Estruturas</li>
-                                        <li class="abilitiesSkillContent">• Laços e repetições</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="python">
-                            <img class="abilitiesImg" src="./images/python.svg" alt="python">
-                            <div class="abilitiesContentContainer">
-                                <div class ="skillImage">
-                                    <img src="./images/python.svg" alt="python">
-                                </div>
-                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
-                                    <h3 class="skillLevelTitle">Python</h3>
-                                    <p class="skillLevel">★★★☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
-                                    <p class="abilitiesClassification">Intermediário</p>
-                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
-                                <div class="abilitiesSkillContainer">
-                                    <h3 class="abilitiesSkillTitle">Competências</h3>
-                                    <ul class="abilitiesSkill1">
-                                        <li class="abilitiesSkillContent">• Sintaxe</li>
-                                        <li class="abilitiesSkillContent">• Estrutura de Dados</li>
-                                        <li class="abilitiesSkillContent">• CRUD</li>
-                                        <li class="abilitiesSkillContent">• Listas, tuplas, dicionários</li>
-                                    </ul>
-                                    <ul class="abilitiesSkill2">
-                                        <li class="abilitiesSkillContent">• Objetos</li>
-                                        <li class="abilitiesSkillContent">• Laços e repetições</li>
-                                        <li class="abilitiesSkillContent">• Manipulação de Strings</li>
-                                        <li class="abilitiesSkillContent">• Tratamento de exceções</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="postgresql">
-                            <img class="abilitiesImg database" src="./images/postgresql.svg" alt="postgresql">
-                            <div class="abilitiesContentContainer">
-                                <div class ="skillImage">
-                                    <img src="./images/postgresql.svg" alt="postgresql">
-                                </div>
-                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
-                                    <h3 class="skillLevelTitle">SQL</h3>
-                                    <p class="skillLevel">★★☆☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
-                                    <p class="abilitiesClassification">Inciante</p>
-                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
-                                <div class="abilitiesSkillContainer">
-                                    <h3 class="abilitiesSkillTitle">Competências</h3>
-                                    <ul class="abilitiesSkill1">
-                                        <li class="abilitiesSkillContent">• Criação de BD</li>
-                                        <li class="abilitiesSkillContent">• Manipulação dos dados</li>
-                                        <li class="abilitiesSkillContent">• Relacionamento</li>
-                                    </ul>
-                                    <ul class="abilitiesSkill2">
-                                        <li class="abilitiesSkillContent">• Pesquisas</li>
-                                        <li class="abilitiesSkillContent">• Sintaxe</li>
-                                        <li class="abilitiesSkillContent">• Tipos de dados</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="git">
-                            <img class="abilitiesImg editor" src="./images/git.svg" alt="git">
-                            <div class="abilitiesContentContainer">
-                                <div class ="skillImage">
-                                    <img src="./images/git.svg" alt="git">
-                                </div>
-                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
-                                    <h3 class="skillLevelTitle">Git</h3>
-                                    <p class="skillLevel">★★☆☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
-                                    <p class="abilitiesClassification">Inciante</p>
-                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
-                                <div class="abilitiesSkillContainer">
-                                    <h3 class="abilitiesSkillTitle">Competências</h3>
-                                    <ul class="abilitiesSkill1">
-                                        <li class="abilitiesSkillContent">• Commits</li>
-                                        <li class="abilitiesSkillContent">• Pull Requests</li>
-                                        <li class="abilitiesSkillContent">• Clone</li>
-                                    </ul>
-                                    <ul class="abilitiesSkill2">
-                                        <li class="abilitiesSkillContent">• Branches</li>
-                                        <li class="abilitiesSkillContent">• Sintaxe</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="linux">
-                            <img class="abilitiesImg" src="./images/linux.svg" alt="linux">
-                            <div class="abilitiesContentContainer">
-                                <div class ="skillImage">
-                                    <img src="./images/linux.svg" alt="linux">
-                                </div>
-                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
-                                    <h3 class="skillLevelTitle">Linux</h3>
-                                    <p class="skillLevel">★★☆☆☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
-                                    <p class="abilitiesClassification">Iniciante</p>
-                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
-                                <div class="abilitiesSkillContainer">
-                                    <ul class="abilitiesSkill1">
-                                    </ul>
-                                    <ul class="abilitiesSkill2">
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="windows">
-                            <img class="abilitiesImg os" src="./images/windows.svg" alt="windows">
-                            <div class="abilitiesContentContainer">
-                                <div class ="skillImage">
-                                    <img src="./images/windows.svg" alt="windows">
-                                </div>
-                                <div class="skillClassification"> <!--caso menor de 480px a tela, não mostrará nada abaixo-->
-                                    <h3 class="skillLevelTitle">Windows</h3>
-                                    <p class="skillLevel">★★★★☆</p> <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
-                                    <p class="abilitiesClassification">Avançado</p>
-                                </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
-                                <div class="abilitiesSkillContainer">
-                                    <ul class="abilitiesSkill1">
-                                    </ul>
-                                    <ul class="abilitiesSkill2">
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="projects">
-                <div class="projectsTitle" id="projects">
-                    <h2>Projetos</h2>
-                </div>
-                <div class="projectsContainer">
-                    <div class="gk"> <!--goleiro-->
-                        <a target="_blank" href="https://rochayuri.github.io/linguagens-desenvolvimento/"><img src="./images/linguagens-desenvolvimento.svg" alt="Linguagens de Desenvolvimento"></a>
-                        <p class="projectName">Linguagens de Desenvolvimento.</p>
-                    </div>
-                    <div class="lb"> <!--lateral esquerdo-->
-                        <a target="_blank" href="https://rochayuri.github.io/cadastro-empregos/"><img src="./images/cadastro-empregos.svg" alt="Sistema de Cadastro de Empregos"></a>
-                        <p class="projectName">Sistema de Cadastro.</p>
-                    </div>
-                    <div class="cb1"> <!--zagueiro esquerdo-->
-                        <a target="_blank" href="https://rochayuri.github.io/calculadora/"><img src="./images/calculator.svg" alt="Calculadora"></a>
-                        <p class="projectName">Calculadora.</p>
-                    </div>
-                    <div class="cb2"> <!--zagueiro direito-->
-                        <a href=""><img src="./images/production.svg" alt=""></a>
-                        <p class="projectName">Em produção.</p>
-                    </div>
-                    <div class="rb"> <!--lateral direito-->
-                        <a href=""><img src="./images/production.svg" alt=""></a>
-                        <p class="projectName">Em produção.</p>
-                    </div>
-                    <div class="lm"> <!--ala esquerdo-->
-                        <a href=""><img src="./images/production.svg" alt=""></a>
-                        <p class="projectName">Em produção.</p>
-                    </div>
-                    <div class="am1"> <!--meia-atacante esquerdo-->
-                        <a href=""><img src="./images/production.svg" alt=""></a>
-                        <p class="projectName">Em produção.</p>
-                    </div>
-                    <div class="am2"> <!--meia-atacante direito-->
-                        <a href=""><img src="./images/production.svg" alt=""></a>
-                        <p class="projectName">Em produção.</p>
-                    </div>
-                    <div class="rm"> <!--ala direto-->
-                        <a href=""><img src="./images/production.svg" alt=""></a>
-                        <p class="projectName">Em produção.</p>
-                    </div>
-                    <div class="at1"> <!--atacante esquerdo-->
-                        <a href=""><img src="./images/production.svg" alt=""></a>
-                        <p class="projectName">Em produção.</p>
-                    </div>
-                    <div class="at2"> <!--atacante direito-->
-                        <a href=""><img src="./images/production.svg" alt=""></a>
-                        <p class="projectName">Em produção.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <footer class="footer" id="contacts">
-            <div class="socialMedias"> <!--redes sociais-->
-                <a target="_blank" href="https://linkedin.com/in/rocha-yuri/"><img src="./images/linkedin.svg" alt="linkedin"></a> <!--linkedin-->
-                <a target="_blank" href="https://github.com/RochaYuri"><img src="./images/github.svg" alt="github" id="github"></a> <!--github-->
-                <a target="_blank" href="https://instagram.com/rochayurii/"><img src="./images/instagram.svg" alt="instagram"></a> <!--instagram-->
-                <a target="_blank" href="https://facebook.com/RochaYurii/"><img src="./images/facebook.svg" alt="facebook"></a> <!--facebook-->
             </div>
-            <div class="e-mail">
-                <form action="https://formsubmit.co/rochayuri.dev@gmail.com" method="POST"> <!--formulario de envio de e-mail-->
-                    <h3 class="formTitle" id="formTitle">Me envie um e-mail!</h3>
-                    <input type="text" placeholder="Nome" name="name" id="formName" required><br>
-                    <input type="email" placeholder="E-mail" name="email" id="email" required><br>
-                    <textarea name="message" placeholder="Sua mensagem.." id="formMessage" required></textarea><br>
-                    <button type="submit" id="button">Enviar</button>
-                    <input type="hidden" name="_captcha" value="false"> <!--captcha desligado-->
-                </form>
+            <div class="abilities">
+                <!--Aqui estão as habilidades. Ao passar o mouse por cima delas, mostrará as competências abaixo-->
+                <h2>Habilidades</h2>
+                <ul class="abilitiesList">
+                    <li class="html5">
+                        <img class="abilitiesImg" src="./images/html5.svg" alt="html5">
+                        <div class="abilitiesContentContainer">
+                            <div class="skillImage">
+                                <img src="./images/html5.svg" alt="html5">
+                            </div>
+                            <div class="skillClassification">
+                                <!--caso menor de 480px a tela, não mostrará nada abaixo-->
+                                <h3 class="skillLevelTitle">HTML</h3>
+                                <p class="skillLevel">★★★★☆</p>
+                                <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
+                                <p class="abilitiesClassification">Avançado</p>
+                            </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
+                            <div class="abilitiesSkillContainer">
+                                <h3 class="abilitiesSkillTitle">Competências</h3>
+                                <ul class="abilitiesSkill1">
+                                    <li class="abilitiesSkillContent">• Estrutura</li>
+                                    <li class="abilitiesSkillContent">• Semântica</li>
+                                    <li class="abilitiesSkillContent">• Multimídia</li>
+                                </ul>
+                                <ul class="abilitiesSkill2">
+                                    <li class="abilitiesSkillContent">• Formulários</li>
+                                    <li class="abilitiesSkillContent">• Tabelas</li>
+                                    <li class="abilitiesSkillContent">• Listas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="css3">
+                        <img class="abilitiesImg front-end" src="./images/css3.svg" alt="css">
+                        <div class="abilitiesContentContainer">
+                            <div class="skillImage">
+                                <img src="./images/css3.svg" alt="css3">
+                            </div>
+                            <div class="skillClassification">
+                                <!--caso menor de 480px a tela, não mostrará nada abaixo-->
+                                <h3 class="skillLevelTitle">CSS</h3>
+                                <p class="skillLevel">★★★☆☆</p>
+                                <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
+                                <p class="abilitiesClassification">Intermediário</p>
+                            </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
+                            <div class="abilitiesSkillContainer">
+                                <h3 class="abilitiesSkillTitle">Competências</h3>
+                                <ul class="abilitiesSkill1">
+                                    <li class="abilitiesSkillContent">• Flexbox</li>
+                                    <li class="abilitiesSkillContent">• Grid</li>
+                                    <li class="abilitiesSkillContent">• Sintaxe</li>
+                                </ul>
+                                <ul class="abilitiesSkill2">
+                                    <li class="abilitiesSkillContent">• Animação</li>
+                                    <li class="abilitiesSkillContent">• Elementos</li>
+                                    <li class="abilitiesSkillContent">• Seletores</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="javascript">
+                        <img class="abilitiesImg" src="./images/javascript.svg" alt="javascript">
+                        <div class="abilitiesContentContainer">
+                            <div class="skillImage">
+                                <img src="./images/javascript.svg" alt="javascript">
+                            </div>
+                            <div class="skillClassification">
+                                <!--caso menor de 480px a tela, não mostrará nada abaixo-->
+                                <h3 class="skillLevelTitle">JavaScript</h3>
+                                <p class="skillLevel">★★☆☆☆</p>
+                                <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
+                                <p class="abilitiesClassification">Iniciante</p>
+                            </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
+                            <div class="abilitiesSkillContainer">
+                                <h3 class="abilitiesSkillTitle">Competências</h3>
+                                <ul class="abilitiesSkill1">
+                                    <li class="abilitiesSkillContent">• Lógica</li>
+                                    <li class="abilitiesSkillContent">• Fundamentos</li>
+                                    <li class="abilitiesSkillContent">• Sintaxe</li>
+                                    <li class="abilitiesSkillContent">• Funções</li>
+                                </ul>
+                                <ul class="abilitiesSkill2">
+                                    <li class="abilitiesSkillContent">• Manipulação de DOM</li>
+                                    <li class="abilitiesSkillContent">• Estruturas</li>
+                                    <li class="abilitiesSkillContent">• Laços e repetições</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="python">
+                        <img class="abilitiesImg" src="./images/python.svg" alt="python">
+                        <div class="abilitiesContentContainer">
+                            <div class="skillImage">
+                                <img src="./images/python.svg" alt="python">
+                            </div>
+                            <div class="skillClassification">
+                                <!--caso menor de 480px a tela, não mostrará nada abaixo-->
+                                <h3 class="skillLevelTitle">Python</h3>
+                                <p class="skillLevel">★★★☆☆</p>
+                                <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
+                                <p class="abilitiesClassification">Intermediário</p>
+                            </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
+                            <div class="abilitiesSkillContainer">
+                                <h3 class="abilitiesSkillTitle">Competências</h3>
+                                <ul class="abilitiesSkill1">
+                                    <li class="abilitiesSkillContent">• Sintaxe</li>
+                                    <li class="abilitiesSkillContent">• Estrutura de Dados</li>
+                                    <li class="abilitiesSkillContent">• CRUD</li>
+                                    <li class="abilitiesSkillContent">• Listas, tuplas, dicionários</li>
+                                </ul>
+                                <ul class="abilitiesSkill2">
+                                    <li class="abilitiesSkillContent">• Objetos</li>
+                                    <li class="abilitiesSkillContent">• Laços e repetições</li>
+                                    <li class="abilitiesSkillContent">• Manipulação de Strings</li>
+                                    <li class="abilitiesSkillContent">• Tratamento de exceções</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="postgresql">
+                        <img class="abilitiesImg database" src="./images/postgresql.svg" alt="postgresql">
+                        <div class="abilitiesContentContainer">
+                            <div class="skillImage">
+                                <img src="./images/postgresql.svg" alt="postgresql">
+                            </div>
+                            <div class="skillClassification">
+                                <!--caso menor de 480px a tela, não mostrará nada abaixo-->
+                                <h3 class="skillLevelTitle">SQL</h3>
+                                <p class="skillLevel">★★☆☆☆</p>
+                                <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
+                                <p class="abilitiesClassification">Inciante</p>
+                            </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
+                            <div class="abilitiesSkillContainer">
+                                <h3 class="abilitiesSkillTitle">Competências</h3>
+                                <ul class="abilitiesSkill1">
+                                    <li class="abilitiesSkillContent">• Criação de BD</li>
+                                    <li class="abilitiesSkillContent">• Manipulação dos dados</li>
+                                    <li class="abilitiesSkillContent">• Relacionamento</li>
+                                </ul>
+                                <ul class="abilitiesSkill2">
+                                    <li class="abilitiesSkillContent">• Pesquisas</li>
+                                    <li class="abilitiesSkillContent">• Sintaxe</li>
+                                    <li class="abilitiesSkillContent">• Tipos de dados</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="git">
+                        <img class="abilitiesImg editor" src="./images/git.svg" alt="git">
+                        <div class="abilitiesContentContainer">
+                            <div class="skillImage">
+                                <img src="./images/git.svg" alt="git">
+                            </div>
+                            <div class="skillClassification">
+                                <!--caso menor de 480px a tela, não mostrará nada abaixo-->
+                                <h3 class="skillLevelTitle">Git</h3>
+                                <p class="skillLevel">★★☆☆☆</p>
+                                <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
+                                <p class="abilitiesClassification">Inciante</p>
+                            </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
+                            <div class="abilitiesSkillContainer">
+                                <h3 class="abilitiesSkillTitle">Competências</h3>
+                                <ul class="abilitiesSkill1">
+                                    <li class="abilitiesSkillContent">• Commits</li>
+                                    <li class="abilitiesSkillContent">• Pull Requests</li>
+                                    <li class="abilitiesSkillContent">• Clone</li>
+                                </ul>
+                                <ul class="abilitiesSkill2">
+                                    <li class="abilitiesSkillContent">• Branches</li>
+                                    <li class="abilitiesSkillContent">• Sintaxe</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="linux">
+                        <img class="abilitiesImg" src="./images/linux.svg" alt="linux">
+                        <div class="abilitiesContentContainer">
+                            <div class="skillImage">
+                                <img src="./images/linux.svg" alt="linux">
+                            </div>
+                            <div class="skillClassification">
+                                <!--caso menor de 480px a tela, não mostrará nada abaixo-->
+                                <h3 class="skillLevelTitle">Linux</h3>
+                                <p class="skillLevel">★★☆☆☆</p>
+                                <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
+                                <p class="abilitiesClassification">Iniciante</p>
+                            </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
+                            <div class="abilitiesSkillContainer">
+                                <ul class="abilitiesSkill1">
+                                </ul>
+                                <ul class="abilitiesSkill2">
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="windows">
+                        <img class="abilitiesImg os" src="./images/windows.svg" alt="windows">
+                        <div class="abilitiesContentContainer">
+                            <div class="skillImage">
+                                <img src="./images/windows.svg" alt="windows">
+                            </div>
+                            <div class="skillClassification">
+                                <!--caso menor de 480px a tela, não mostrará nada abaixo-->
+                                <h3 class="skillLevelTitle">Windows</h3>
+                                <p class="skillLevel">★★★★☆</p>
+                                <!--1 estela = noob; 2 estrelas = iniciante, 3 estrelas = intermediario, 4 estrelas = avançado, 5 estrelas = especialista-->
+                                <p class="abilitiesClassification">Avançado</p>
+                            </div> <!--caso menor de 1200px a tela, mostrará somente até aqui-->
+                            <div class="abilitiesSkillContainer">
+                                <ul class="abilitiesSkill1">
+                                </ul>
+                                <ul class="abilitiesSkill2">
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </footer>
-        <div class="copyright">
-            <p id="copyright">Site desenvolvido por <a target="_blank" href="https://github.com/RochaYuri">RochaYuri</a> || Código aberto no <a target="_blank" href="https://github.com/RochaYuri/rochayuri">GitHub</a>!</p>
+        </section>
+        <section class="projects">
+            <div class="projectsTitle" id="projects">
+                <h2>Projetos</h2>
+            </div>
+            <div class="projectsContainer">
+                <div class="gk"> <!--goleiro-->
+                    <a target="_blank" href="https://rochayuri.github.io/linguagens-desenvolvimento/"><img
+                            src="./images/linguagens-desenvolvimento.svg" alt="Linguagens de Desenvolvimento"></a>
+                    <p class="projectName">Linguagens de Desenvolvimento</p>
+                </div>
+                <div class="lb"> <!--lateral esquerdo-->
+                    <a target="_blank" href="https://rochayuri.github.io/cadastro-empregos/"><img
+                            src="./images/cadastro-empregos.svg" alt="Sistema de Cadastro de Empregos"></a>
+                    <p class="projectName">Sistema de Cadastro</p>
+                </div>
+                <div class="cb1"> <!--zagueiro esquerdo-->
+                    <a target="_blank" href="https://rochayuri.github.io/calculadora/"><img
+                            src="./images/calculator.svg" alt="Calculadora"></a>
+                    <p class="projectName">Calculadora</p>
+                </div>
+                <div class="cb2"> <!--zagueiro direito-->
+                    <a target="_blank" href="https://rochayuri.github.io/todo-list/"><img src="./images/todo-list.svg"
+                            alt="Lista de Tarefas"></a>
+                    <p class="projectName">Lista de Tarefas</p>
+                </div>
+                <div class="rb"> <!--lateral direito-->
+                    <a href=""><img src="./images/production.svg" alt=""></a>
+                    <p class="projectName">Em produção</p>
+                </div>
+                <div class="lm"> <!--ala esquerdo-->
+                    <a href=""><img src="./images/production.svg" alt=""></a>
+                    <p class="projectName">Em produção</p>
+                </div>
+                <div class="am1"> <!--meia-atacante esquerdo-->
+                    <a href=""><img src="./images/production.svg" alt=""></a>
+                    <p class="projectName">Em produção</p>
+                </div>
+                <div class="am2"> <!--meia-atacante direito-->
+                    <a href=""><img src="./images/production.svg" alt=""></a>
+                    <p class="projectName">Em produção</p>
+                </div>
+                <div class="rm"> <!--ala direto-->
+                    <a href=""><img src="./images/production.svg" alt=""></a>
+                    <p class="projectName">Em produção</p>
+                </div>
+                <div class="at1"> <!--atacante esquerdo-->
+                    <a href=""><img src="./images/production.svg" alt=""></a>
+                    <p class="projectName">Em produção</p>
+                </div>
+                <div class="at2"> <!--atacante direito-->
+                    <a href=""><img src="./images/production.svg" alt=""></a>
+                    <p class="projectName">Em produção</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="socialMedias"> <!--redes sociais-->
+            <a target="_blank" href="https://linkedin.com/in/rocha-yuri/"><img src="./images/linkedin.svg"
+                    alt="linkedin"></a> <!--linkedin-->
+            <a target="_blank" href="https://github.com/RochaYuri"><img src="./images/github.svg" alt="github"
+                    id="github"></a> <!--github-->
+            <a target="_blank" href="https://instagram.com/rochayurii/"><img src="./images/instagram.svg"
+                    alt="instagram"></a> <!--instagram-->
+            <a target="_blank" href="https://facebook.com/RochaYurii/"><img src="./images/facebook.svg"
+                    alt="facebook"></a> <!--facebook-->
         </div>
-        <script src="js/script.js"></script>
-        <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script> <!--ícones-->
-    </body>
+        <div class="e-mail">
+            <form action="https://formsubmit.co/rochayuri.dev@gmail.com" method="POST">
+                <!--formulario de envio de e-mail-->
+                <h3 class="formTitle" id="formTitle">Me envie um e-mail!</h3>
+                <input type="text" placeholder="Nome" name="name" id="formName" required><br>
+                <input type="email" placeholder="E-mail" name="email" id="email" required><br>
+                <textarea name="message" placeholder="Sua mensagem.." id="formMessage" required></textarea><br>
+                <button type="submit" id="button">Enviar</button>
+                <input type="hidden" name="_captcha" value="false"> <!--captcha desligado-->
+            </form>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p id="copyright">Site desenvolvido por <a target="_blank" href="https://github.com/RochaYuri">RochaYuri</a> ||
+            Código aberto no <a target="_blank" href="https://github.com/RochaYuri/rochayuri">GitHub</a>!</p>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script> <!--ícones-->
+</body>
+
 </html>
