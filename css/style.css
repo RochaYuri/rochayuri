@@ -1,236 +1,732 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Space+Grotesk&family=Teko:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Space+Grotesk&family=Teko:wght@300;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #054c5e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #76bdbe;
+}
 
 body {
-    background-image: url("../images/background.svg");
-    background-size: cover;
-    transition: background 0.1s linear;
+  background-image: url("../images/background.svg");
+  background-size: cover;
+  transition: background 0.1s linear;
 }
 
 body.dark {
-    background-image: url('../images/background-dark.svg');
+  background-image: url("../images/background-dark.svg");
 }
 
 .header {
-    background-color: transparent;
-    height: 7vh;
-    width: 100%;
-    padding: 4%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
+  background-color: transparent;
+  height: 7vh;
+  width: 100%;
+  padding: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .logo {
-    font-size: 50px;
-    font-family: 'Comfortaa', cursive;
-    color: #00000085;
-    transition: 0.1s;
+  font-size: 50px;
+  font-family: "Comfortaa", cursive;
+  color: #00000085;
+  transition: 0.1s;
 }
 
 .logo:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .logo.dark {
-    color: #c5c4c4;
+  color: #c5c4c4;
 }
 
 .navButton {
-    background-color: transparent;
-    border: 3px solid transparent;
-    border-radius: 30px;
-    transition: 0.3s;
+  background-color: transparent;
+  border: 3px solid transparent;
+  border-radius: 30px;
+  transition: 0.3s;
 }
 
 .navButton a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.521);
-    font-family: 'Teko', sans-serif;
-    font-size: 35px;
-    padding: 20px;
-    transition: 0.3s;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.521);
+  font-family: "Teko", sans-serif;
+  font-size: 35px;
+  padding: 20px;
+  transition: 0.3s;
 }
 
 .navButton:hover {
-    border: 3px solid #333449;
-    border-radius: 30px;
+  border: 3px solid #333449;
+  border-radius: 30px;
 }
 
 .navButton a:hover {
-    color:#333449;
+  color: #333449;
 }
 
 /* dark theme */
 
-#navLink1.dark, #navLink2.dark, #navLink3.dark {
-    color: #c5c4c4;
+#navLink1.dark,
+#navLink2.dark,
+#navLink3.dark {
+  color: #c5c4c4;
 }
 
-#navLink1.dark:hover, #navLink2.dark:hover, #navLink3.dark:hover {
-    color: #333449;
+#navLink1.dark:hover,
+#navLink2.dark:hover,
+#navLink3.dark:hover {
+  color: #333449;
 }
 
-#navButton1.dark:hover, #navButton2.dark:hover, #navButton3.dark:hover {
-    border-color: #333449
+#navButton1.dark:hover,
+#navButton2.dark:hover,
+#navButton3.dark:hover {
+  border-color: #333449;
 }
 
 /* dark theme end */
 
 .cvButton {
-    background-color: #c4c4d4;
-    border: 3px solid #333449;
+  background-color: #c4c4d4;
+  border: 3px solid #333449;
 }
 
 .cvButton:hover {
-    background-color: #333449;
-    border: 3px solid #333449;
+  background-color: #333449;
+  border: 3px solid #333449;
 }
 
 .cvButton a:hover {
-    color: #c5c5d4;
+  color: #c5c5d4;
 }
 
 .checkbox {
-    opacity: 0;
-    position: absolute;
+  opacity: 0;
+  position: absolute;
 }
 
 .theme {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .label {
-    background-color: #c5c5d4;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: space-around;
-    padding: 5px;
-    height: 26px;
-    width: 50px;
-    margin: 15px;
-    transform: scale(1.5);
+  background-color: #c5c5d4;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-around;
+  padding: 5px;
+  height: 26px;
+  width: 50px;
+  margin: 15px;
+  transform: scale(1.5);
 }
 
 .label .ball {
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 22px;
-    height: 22px;
-    transform: translateX(0px);
-    transition: transform 0.2s linear;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
 }
 
 .checkbox:checked + .label {
-    background-color: #067a06;
+  background-color: #067a06;
 }
 
 .checkbox:checked + label .ball {
-    transform: translateX(24px);
-    background-color: #15d115;
+  transform: translateX(24px);
+  background-color: #15d115;
 }
 
 .fa-moon {
-    color: #080868c0;
+  color: #080868c0;
 }
 
 .fa-sun {
-    color: #5a5c04ab;
+  color: #5a5c04ab;
 }
 
 .mainContainer {
-    display: flex;
-    flex-wrap: wrap;
-    animation: transitionIn 1.5s;
+  display: flex;
+  flex-wrap: wrap;
+  animation: transitionIn 1.5s;
 }
 
 .bibliography {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
     "picture introduction"
     "picture abilities";
-    padding-top: 10rem;
-    height: 93vh;
-    font-family: "Comfortaa", Arial, Helvetica, sans-serif;
-    min-height: 850px;
-    max-height: 9500px;
+  padding-top: 10rem;
+  height: 93vh;
+  font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+  min-height: 850px;
+  max-height: 9500px;
 }
 
 .picture img {
-    max-width: 65%;
-    transition: 0.5s;
+  max-width: 65%;
+  transition: 0.5s;
 }
 
 .picture img:hover {
-    scale: 1.1;
-    cursor: pointer;
+  scale: 1.1;
+  cursor: pointer;
 }
 
 .picture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: picture;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: picture;
 }
 
 #introduction {
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: introduction;
-    max-width: 700px;
-    align-content: center;
-    font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: introduction;
+  max-width: 700px;
+  align-content: center;
+  font-size: 25px;
 }
 
 .introduction h3 {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .introduction p {
-    font-size: 400px;
+  font-size: 400px;
 }
 
 .abilities {
-    grid-area: abilities;
+  grid-area: abilities;
 }
 
 .abilities h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .abilitiesList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .abilitiesList li {
-    position: relative;
-    list-style: none;
-    border-radius: 50%;
-    transition: 0.5s;
+  position: relative;
+  list-style: none;
+  border-radius: 50%;
+  transition: 0.5s;
 }
 
 .abilitiesList li .abilitiesContentContainer {
+  position: absolute;
+  top: 85px;
+  width: 500px;
+  background: #222336;
+  padding: 20px;
+  border-radius: 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateX(-50%) translateY(-50px);
+}
+
+.abilitiesList li .abilitiesContentContainer:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #222336;
+  top: -10px;
+  left: 265px;
+  transform: rotate(45deg);
+}
+
+.abilitiesList li:hover .abilitiesContentContainer {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0px);
+}
+
+.abilitiesImg {
+  width: 50px;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.abilitiesImg:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.abilitiesContent img {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.abilitiesContentContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "skillImage skillClassification"
+    "abilitiesSkillContainer abilitiesSkillContainer";
+  gap: 20px 0;
+  color: white;
+  justify-content: center;
+}
+
+.skillImage {
+  grid-area: skillImage;
+  display: flex;
+  justify-content: center;
+}
+.skillImage img {
+  width: 65%;
+}
+
+.skillLevelTitle {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.skillLevel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 25px;
+  color: #dece52;
+}
+
+.abilitiesClassification {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.skillClassification {
+  grid-area: skillClassification;
+}
+
+.abilitiesSkillContainer {
+  grid-area: abilitiesSkillContainer;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "abilitiesSkillTitle abilitiesSkillTitle"
+    "abilitiesSkill1 abilitiesSkill2";
+}
+
+.abilitiesSkillContainer li {
+  display: flex;
+  justify-content: center;
+}
+
+.abilitiesSkillTitle {
+  grid-area: abilitiesSkillTitle;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.abilitiesSkill1 {
+  grid-area: abilitiesSkill1;
+}
+
+.abilitiesSkill2 {
+  grid-area: abilitiesSkill2;
+}
+
+.projectsTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 55px;
+  font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+  padding: 35px;
+}
+
+.projects {
+  width: 100%;
+  margin-top: 75px;
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "gk lb lm at1"
+    "gk cb1 am1 at1"
+    "gk cb2 am2 at2"
+    "gk rb rm at2";
+  align-items: center;
+  gap: 0 40px;
+  width: 85%;
+  height: 950px;
+  padding: 50px;
+  background-image: url("../images/pitch.svg");
+  background-size: contain;
+  background-repeat: round;
+  margin: auto;
+}
+
+.projectName {
+  text-shadow: 0.1em 0.0001em 0.5em #222336;
+
+  font-weight: 700;
+}
+
+.gk {
+  grid-area: gk;
+}
+.lb {
+  grid-area: lb;
+}
+.cb1 {
+  grid-area: cb1;
+}
+.cb2 {
+  grid-area: cb2;
+}
+.rb {
+  grid-area: rb;
+}
+.lm {
+  grid-area: lm;
+}
+.am1 {
+  grid-area: am1;
+}
+.am2 {
+  grid-area: am2;
+}
+.rm {
+  grid-area: rm;
+}
+.at1 {
+  grid-area: at1;
+}
+.at2 {
+  grid-area: at2;
+}
+
+.projects img {
+  width: 110px;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+
+.projects img:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMedias img {
+  display: flex;
+  padding-bottom: 15px;
+  width: 35px;
+  transition: 0.3s;
+}
+
+.socialMedias img:hover {
+  opacity: 65%;
+}
+
+#formTitle.dark {
+  color: #c5c4c4;
+}
+
+.footer form {
+  font-family: "Space Grotesk", Arial;
+  font-size: 16px;
+  padding: 35px;
+}
+
+.footer form #formName,
+#email {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 8px;
+  padding: 10px;
+  border: 1px solid #333449;
+  border-radius: 10px;
+}
+
+.footer form #formMessage {
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 8px;
+  padding: 10px;
+  width: 345px;
+  border: 1px solid #333449;
+  border-radius: 10px;
+}
+
+.e-mail button {
+  font-family: "Space Grotesk", Arial;
+  font-size: 25px;
+  width: 105px;
+  background-color: transparent;
+  border: 3px solid #333449;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.e-mail button:hover {
+  cursor: pointer;
+  background-color: rgba(118, 189, 190, 0.658);
+}
+
+#button.dark {
+  color: #c5c4c4;
+}
+
+#button.dark:hover {
+  background-color: #c5c4c4;
+  color: #222336;
+}
+
+.copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(75, 74, 74, 0.582);
+}
+
+#copyright.dark {
+  color: #c5c4c4;
+}
+
+/* PÁGINA DE ENVIO DE E-MAIL */
+
+.emailSentMessage {
+  margin: 150px;
+  text-align: center;
+}
+
+.emailSentMessage h2 {
+  font-size: 55px;
+  font-family: "Space Grotesk", Arial;
+}
+
+.emailSentMessage p {
+  font-size: 30px;
+  font-family: "Space Grotesk", Arial;
+}
+
+.backhome {
+  font-family: "Space Grotesk", Arial;
+  font-size: 25px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 3px solid #333449;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.backhome:hover {
+  cursor: pointer;
+  background-color: rgba(118, 189, 190, 0.658);
+}
+
+.backhome a {
+  text-decoration: none;
+  color: #333449;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .bibliography {
+    padding: 50px;
+    width: 100vw;
+    min-height: 900px;
+    max-height: 1050px;
+  }
+
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "gk lb lm at1"
+      "gk cb1 am1 at1"
+      "gk cb2 am2 at2"
+      "gk rb rm at2";
+    align-items: center;
+    width: 85%;
+    height: 1250px;
+    padding: 50px;
+    background-image: url("../images/pitch.svg");
+    background-size: contain;
+    background-repeat: round;
+    margin: auto;
+  }
+
+  .projects img {
+    width: 140px;
+    border-radius: 50px;
+    transition: 0.4s;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1301px) {
+  .header {
+    padding: 3%;
+  }
+
+  .mainContainer {
+    width: 98vw;
+  }
+
+  .bibliography {
+    grid-area: bibliography;
+    padding: 40px;
+    margin: 0;
+    min-height: 450px;
+    max-height: 500px;
+  }
+
+  #introduction p {
+    font-size: 16px;
+  }
+
+  .abilitiesContentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "skillImage skillImage"
+      "skillClassification skillClassification";
+    max-width: 180px;
+    gap: 0px;
+  }
+
+  .abilitiesList li .abilitiesContentContainer:before {
+    content: "";
     position: absolute;
-    top: 85px;
+    width: 30px;
+    height: 30px;
+    background: #222336;
+    top: -10px;
+    left: 105px;
+    transform: rotate(45deg);
+  }
+
+  .skillImage img {
+    width: 25%;
+  }
+
+  .abilitiesSkillContainer {
+    display: none;
+  }
+
+  .projects {
+    grid-area: projects;
+    margin: 0;
+  }
+
+  .projectsContainer {
+    max-height: 650px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    height: 20vh;
+    justify-content: space-around;
+  }
+
+  .theme {
+    order: 3;
+  }
+
+  .bibliography {
+    padding: 0px;
+    min-height: 550px;
+    max-height: 650px;
+  }
+
+  #introduction {
+    font-size: 18px;
+  }
+
+  .picture {
+    margin: 20px;
+  }
+
+  .abilities {
+    padding: 35px;
+  }
+
+  .abilitiesImg {
+    width: 30px;
+    margin: 5px;
+    transition: 0.3s;
+  }
+
+  .abilitiesContentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "skillImage skillImage"
+      "skillClassification skillClassification";
+    max-width: 150px;
+    gap: 0px;
+  }
+
+  .abilitiesList li .abilitiesContentContainer {
+    position: absolute;
+    top: 60px;
     width: 500px;
     background: #222336;
     padding: 20px;
@@ -239,1069 +735,587 @@ body.dark {
     opacity: 0;
     transition: 0.5s;
     transform: translateX(-50%) translateY(-50px);
-}
+  }
 
-.abilitiesList li .abilitiesContentContainer:before {
-    content: '';
+  .abilitiesList li .abilitiesContentContainer:before {
+    content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background: #222336;
     top: -10px;
-    left: 265px;
+    left: 85px;
     transform: rotate(45deg);
-}
-
-.abilitiesList li:hover .abilitiesContentContainer {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(-50%) translateY(0px);
-}
-
-.abilitiesImg {
-    width: 50px;
-    margin: 5px;
-    transition: 0.3s;
-}
-
-.abilitiesImg:hover {
-    opacity: 60%;
-    cursor: pointer;
-}
-
-.abilitiesContent img {
-    width: 90px;
-    border-radius: 50%;
-}
-
-.abilitiesContentContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "skillImage skillClassification"
-    "abilitiesSkillContainer abilitiesSkillContainer";
-    gap: 20px 0;
-    color: white;
-    justify-content: center;
-}
-
-.skillImage {
-    grid-area: skillImage;
-    display: flex;
-    justify-content: center;
-}
-.skillImage img {
-    width: 65%;
-}
-
-.skillLevelTitle {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    font-size: 25px;
-}
-
-.skillLevel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 25px;
-    color: #dece52;
-}
-
-.abilitiesClassification {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    font-size: 20px;
-}
-
-.skillClassification {
-    grid-area: skillClassification;
-}
-
-.abilitiesSkillContainer {
-    grid-area: abilitiesSkillContainer;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "abilitiesSkillTitle abilitiesSkillTitle"
-    "abilitiesSkill1 abilitiesSkill2";
-}
-
-.abilitiesSkillContainer li {
-    display: flex;
-    justify-content: center;
-}
-
-.abilitiesSkillTitle {
-    grid-area: abilitiesSkillTitle;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px
-}
-
-.abilitiesSkill1 {
-    grid-area: abilitiesSkill1;
-}
-
-.abilitiesSkill2 {
-    grid-area: abilitiesSkill2;
-}
-
-.projectsTitle {
-    width: 100%;
-    text-align: center;
-    font-size: 55px;
-    font-family: "Comfortaa", Arial, Helvetica, sans-serif;
-    padding: 35px;
-}
-
-.projects {
-    width: 100%;
-    margin-top: 75px;
-}
-
-.projectsContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    "gk lb lm at1"
-    "gk cb1 am1 at1"
-    "gk cb2 am2 at2"
-    "gk rb rm at2";
-    align-items: center;
-    gap: 0 40px;
-    width: 85%;
-    height: 950px;
-    padding: 50px;
-    background-image: url("../images/pitch.svg");
-    background-size: contain;
-    background-repeat: round;
-    margin: auto;
-}
-
-.projectName {
-    text-shadow: 0.1em 0.0001em 0.5em #222336;
-    
-    font-weight: 700;
-}
-
-.gk {
-    grid-area: gk;
-}
-.lb {
-    grid-area: lb;
-}
-.cb1 {
-    grid-area: cb1;
-}
-.cb2 {
-    grid-area: cb2;
-}
-.rb {
-    grid-area: rb;
-}
-.lm {
-    grid-area: lm;
-}
-.am1 {
-    grid-area: am1;
-}
-.am2 {
-    grid-area: am2;
-}
-.rm {
-    grid-area: rm;
-}
-.at1 {
-    grid-area: at1;
-}
-.at2 {
-    grid-area: at2;
-}
-
-.projects img {
-    width: 110px;
-    border-radius: 50px;
-    transition: 0.4s;
-}
-
-.projects img:hover {
-    scale: 1.2;
-    cursor: pointer;
-}
-
-.footer {
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.socialMedias img {
-    display: flex;
-    padding-bottom: 15px;
-    width: 35px;
-    transition: 0.3s;
-}
-
-.socialMedias img:hover {
-    opacity: 65%;
-}
-
-#formTitle.dark {
-    color: #c5c4c4;
-}
-
-.footer form {
-    font-family: 'Space Grotesk', Arial;
-    font-size: 16px;
-    padding: 35px;
-}
-
-.footer form #formName, #email {
-    width: 250px;
-    height: 30px;
-    font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 8px;
-    padding: 10px;
-    border: 1px solid #333449;
-    border-radius: 10px;
-}
-
-.footer form #formMessage {
-    font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 8px;
-    padding: 10px;
-    width: 345px;
-    border: 1px solid #333449;
-    border-radius: 10px;
-}
-
-.e-mail button {
-    font-family: 'Space Grotesk', Arial;
-    font-size: 25px;
-    width: 105px;
-    background-color: transparent;
-    border: 3px solid #333449;
-    border-radius: 15px;
-    transition: 0.2s;
-}
-
-.e-mail button:hover {
-    cursor: pointer;
-    background-color: rgba(118, 189, 190, 0.658);
-}
-
-#button.dark {
-    color: #c5c4c4;
-}
-
-#button.dark:hover {
-    background-color: #c5c4c4;
-    color: #222336;
-}
-
-.copyright {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(75, 74, 74, 0.582);
-}
-
-#copyright.dark {
-    color: #c5c4c4;
-}
-
-/* PÁGINA DE ENVIO DE E-MAIL */
-
-.emailSentMessage {
-    margin: 150px;
-    text-align: center;
-}
-
-.emailSentMessage h2 {
-    font-size: 55px;
-    font-family: 'Space Grotesk', Arial;
-}
-
-.emailSentMessage p {
-    font-size: 30px;
-    font-family: 'Space Grotesk', Arial;
-}
-
-.backhome {
-    font-family: 'Space Grotesk', Arial;
-    font-size: 25px;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 3px solid #333449;
-    border-radius: 15px;
-    transition: 0.2s;
-}
-
-.backhome:hover {
-    cursor: pointer;
-    background-color: rgba(118, 189, 190, 0.658);
-}
-
-.backhome a {
-    text-decoration: none;
-    color: #333449;
-}
-
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: translateX(-70px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-@media screen and (min-width: 1921px) {
-
-    .bibliography {
-        padding: 50px;
-        width: 100vw;
-        min-height: 900px;
-        max-height: 1050px;
-    }
-
-    .projectsContainer {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: 
-        "gk lb lm at1"
-        "gk cb1 am1 at1"
-        "gk cb2 am2 at2"
-        "gk rb rm at2";
-        align-items: center;
-        width: 85%;
-        height: 1250px;
-        padding: 50px;
-        background-image: url("../images/pitch.svg");
-        background-size: contain;
-        background-repeat: round;
-        margin: auto;
-    }
-
-    .projects img {
-        width: 140px;
-        border-radius: 50px;
-        transition: 0.4s;
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1301px) {
-
-    .header {
-        padding: 3%;
-    }
-
-    .mainContainer {
-        width: 98vw;
-    }
-
-    .bibliography {
-        grid-area: bibliography;
-        padding: 40px;
-        margin: 0;
-        min-height: 450px;
-        max-height: 500px;
-    }
-
-    #introduction p {
-        font-size: 16px;
-    }
-
-    .abilitiesContentContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "skillImage skillImage"
-        "skillClassification skillClassification";
-        max-width: 180px;
-        gap: 0px;
-    }
-
-    .abilitiesList li .abilitiesContentContainer:before {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        background: #222336;
-        top: -10px;
-        left: 105px;
-        transform: rotate(45deg);
-    }
-
-    .skillImage img {
-        width: 25%;
-    }
-
-    .abilitiesSkillContainer {
-        display: none;
-    }
-
-    .projects {
-        grid-area: projects;
-        margin: 0;
-    }
-
-    .projectsContainer {
-        max-height: 650px;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
-    .header {
-        height: 20vh;
-        justify-content: space-around;
-    }
-
-    .theme {
-        order: 3;
-    }
-    
-    .bibliography {
-        padding: 0px;
-        min-height: 550px;
-        max-height: 650px;
-    }
-
-    #introduction {
-        font-size: 18px;
-    }
-
-    .picture {
-        margin: 20px;
-    }
-
-    .abilities {
-        padding: 35px;
-    }
-
-    .abilitiesImg {
-        width: 30px;
-        margin: 5px;
-        transition: 0.3s;
-    }
-    
-    .abilitiesContentContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "skillImage skillImage"
-        "skillClassification skillClassification";
-        max-width: 150px;
-        gap: 0px;
-    }
-
-    .abilitiesList li .abilitiesContentContainer {
-        position: absolute;
-        top: 60px;
-        width: 500px;
-        background: #222336;
-        padding: 20px;
-        border-radius: 15px;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.5s;
-        transform: translateX(-50%) translateY(-50px);
-    }
-
-    .abilitiesList li .abilitiesContentContainer:before {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: #222336;
-        top: -10px;
-        left: 85px;
-        transform: rotate(45deg);
-    }
-
-    .abilitiesSkillContainer {
-        display: none;
-    }
-
-    .projects {
-        margin: 0;
-    }
-
-    .projectsContainer {
-        max-height: 550px;
-        gap: 0;
-    }
-
-    .projectsContainer img {
-        width: 85px;
-    }
+  }
+
+  .abilitiesSkillContainer {
+    display: none;
+  }
+
+  .projects {
+    margin: 0;
+  }
+
+  .projectsContainer {
+    max-height: 550px;
+    gap: 0;
+  }
+
+  .projectsContainer img {
+    width: 85px;
+  }
 }
 
 @media screen and (min-width: 581px) and (max-width: 768px) {
+  .header {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .header {
-        height: auto;
-        justify-content: center;
-        align-items: center;
-    }
+  .cv {
+    order: 2;
+  }
 
-    .cv {
-        order: 2;
-    }
+  .theme {
+    order: 3;
+    transform: scale(0.8);
+  }
 
-    .theme {
-        order: 3;
-        transform: scale(0.8);
-    }
+  .bibliography {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    min-height: 680px;
+    max-height: 750px;
+  }
 
-    .bibliography {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding: 40px;
-        min-height: 680px;
-        max-height: 750px;
-    }
+  .picture {
+    margin: 20px;
+  }
 
-    .picture {
-        margin: 20px;
-    }
+  #introduction {
+    font-size: 15px;
+  }
 
-    #introduction {
-        font-size: 15px;
-    }
+  .abilities {
+    padding: 35px;
+  }
 
-    .abilities {
-        padding: 35px;
-    }
+  .abilitiesContentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "skillImage skillImage"
+      "skillClassification skillClassification";
+    max-width: 150px;
+    gap: 0px;
+  }
 
-    .abilitiesContentContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "skillImage skillImage"
-        "skillClassification skillClassification";
-        max-width: 150px;
-        gap: 0px;
-    }
+  .abilitiesList li .abilitiesContentContainer {
+    position: absolute;
+    top: 65px;
+    width: 150px;
+    background: #222336;
+    padding: 20px;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+  }
+  .abilitiesList li .abilitiesContentContainer:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #222336;
+    top: -10px;
+    left: 82px;
+    transform: rotate(45deg);
+  }
+  .abilitiesImg {
+    width: 28px;
+    margin: 5px;
+    transition: 0.3s;
+  }
 
-    .abilitiesList li .abilitiesContentContainer {
-        position: absolute;
-        top: 65px;
-        width: 150px;
-        background: #222336;
-        padding: 20px;
-        border-radius: 15px;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.5s;
-        transform: translateX(-50%) translateY(-50px);
-    }
-    .abilitiesList li .abilitiesContentContainer:before {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: #222336;
-        top: -10px;
-        left: 82px;
-        transform: rotate(45deg);
-    }
-    .abilitiesImg {
-        width: 28px;
-        margin: 5px;
-        transition: 0.3s;
-    }
+  .skillLevelTitle {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+  }
 
-    .skillLevelTitle {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        font-size: 20px;
-    }
-    
-    .skillLevel {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-size: 20px;
-        color: #dece52;
-    }
-    
-    .abilitiesClassification {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        font-size: 15px;
-    }
+  .skillLevel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
+    color: #dece52;
+  }
 
-    .abilitiesSkillContainer {
-        display: none;
-    }
+  .abilitiesClassification {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 15px;
+  }
 
-    .projectsContainer {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "gk cb1 am1 at1"
-        "gk cb2 am2 at2";
-        padding: 50px 20px;
-        max-height: 400px;
-        text-align: center;
-    }
+  .abilitiesSkillContainer {
+    display: none;
+  }
 
-    .projectsContainer img {
-        width: 65px;
-    }
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "gk cb1 am1 at1"
+      "gk cb2 am2 at2";
+    padding: 50px 20px;
+    max-height: 400px;
+    text-align: center;
+  }
 
-    .gk {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        grid-area: gk;
-    }
-    .lb {
-        display: none;
-    }
-    .cb1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        grid-area: cb1;
-    }
-    .cb2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        grid-area: cb2;
-    }
-    .rb {
-        display: none;
-    }
-    .lm {
-        display: none;
-    }
-    .am1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        grid-area: am1;
-    }
-    .am2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        grid-area: am2;
-    }
-    .rm {
-        display: none;
-    }
-    .at1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        grid-area: at1;
-    }
-    .at2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        grid-area: at2;
-    }
+  .projectsContainer img {
+    width: 65px;
+  }
+
+  .gk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: gk;
+  }
+  .lb {
+    display: none;
+  }
+  .cb1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: cb1;
+  }
+  .cb2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: cb2;
+  }
+  .rb {
+    display: none;
+  }
+  .lm {
+    display: none;
+  }
+  .am1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: am1;
+  }
+  .am2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: am2;
+  }
+  .rm {
+    display: none;
+  }
+  .at1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: at1;
+  }
+  .at2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: at2;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 580px) {
+  .header {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .header {
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
+  .header a {
+    font-size: 25px;
+  }
 
-    .header a {
-        font-size: 25px;
-    }
+  .cv {
+    order: 2;
+  }
 
-    .cv {
-        order: 2;
-    }
+  .theme {
+    order: 3;
+    transform: scale(0.7);
+  }
 
-    .theme {
-        order: 3;
-        transform: scale(0.7);
-    }
+  .mainContainer {
+    width: 100vw;
+  }
 
-    .mainContainer {
-        width: 100vw;
-    }
+  .picture {
+    margin-bottom: 15px;
+  }
 
-    .picture {
-        margin-bottom: 15px;
-    }
+  .bibliography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    min-height: 650px;
+    max-height: 750px;
+  }
 
-    .bibliography {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-        padding: 15px;
-        min-height: 650px;
-        max-height: 750px;
-    }
+  #introduction {
+    text-align: center;
+    font-size: 16px;
+  }
 
-    #introduction {
-        text-align: center;
-        font-size: 16px;
-    }
+  .abilities {
+    margin-top: 20px;
+  }
 
-    .abilities {
-        margin-top: 20px;
-    }
+  .abilitiesImg {
+    width: 35px;
+  }
 
-    .abilitiesImg {
-        width: 35px;
-    }
+  .abilitiesSkillContainer {
+    display: none;
+  }
 
-    .abilitiesSkillContainer {
-        display: none;
-    }
+  .abilitiesContentContainer {
+    display: none;
+  }
 
-    .abilitiesContentContainer {
-        display: none;
-    }
+  .projects {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 600px;
+    margin: 0;
+  }
 
-    .projects {
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-        max-height: 600px;
-        margin: 0;
-    }
+  .projectsTitle {
+    font-size: 35px;
+  }
 
-    .projectsTitle {
-        font-size: 35px;
-    }
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "gk gk"
+      "cb1 cb1"
+      "am1 am2"
+      "at1 at1";
+    padding: 20px 50px;
+    padding-top: 0px;
+    gap: 3px;
+    max-height: 350px;
+    max-width: 230px;
+    background-image: url("../images/pitch2.svg");
+    background-size: cover;
+  }
 
-    .projectsContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        "gk gk"
-        "cb1 cb1"
-        "am1 am2"
-        "at1 at1";
-        padding: 20px 50px;
-        padding-top: 0px;
-        gap: 3px;
-        max-height: 350px;
-        max-width: 230px;
-        background-image: url("../images/pitch2.svg");
-        background-size: cover;
-    }
+  .projectsContainer img {
+    width: 45px;
+  }
 
-    .projectsContainer img {
-        width: 45px;
-    }
+  .projectsContainer p {
+    font-size: 16px;
+  }
 
-    .projectsContainer p {
-        font-size: 16px;
-    }
+  .gk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    grid-area: gk;
+  }
+  .lb {
+    display: none;
+  }
+  .cb1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    grid-area: cb1;
+  }
+  .cb2 {
+    display: none;
+  }
+  .rb {
+    display: none;
+  }
+  .lm {
+    display: none;
+  }
+  .am1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    grid-area: am1;
+  }
+  .am2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    grid-area: am2;
+  }
+  .rm {
+    display: none;
+  }
+  .at1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    grid-area: at1;
+  }
+  .at2 {
+    display: none;
+  }
 
-    .gk {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        grid-area: gk;
-    }
-    .lb {
-        display: none;
-    }
-    .cb1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        grid-area: cb1;
-    }
-    .cb2 {
-        display: none;
-    }
-    .rb {
-        display: none;
-    }
-    .lm {
-        display: none;
-    }
-    .am1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        grid-area: am1;
-    }
-    .am2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        grid-area: am2;
-    }
-    .rm {
-        display: none;
-    }
-    .at1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        grid-area: at1;
-    }
-    .at2 {
-        display: none;
-    }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
 
-    .footer {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 25px;
-    }
+  .socialMedias {
+    display: flex;
+  }
 
-    .socialMedias {
-        display: flex;
-    }
+  .socialMedias img {
+    margin: 5px;
+  }
 
-    .socialMedias img {
-        margin: 5px;
-    }
+  .e-mail {
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+  }
 
-    .e-mail{
-        padding: 0;
-        margin: 0;
-        max-width: 100vw;
-    }
+  #formName {
+    max-width: 100%;
+  }
 
-    #formName{
-        max-width: 100%;
-    }
+  #email {
+    max-width: 100%;
+  }
 
-    #email{
-        max-width: 100%;
-    }
-
-    #formMessage{
-        max-width: 100%;
-    }
-
+  #formMessage {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 320px) {
-    .header {
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
+  .header {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .logo {
-        font-size: 30px;
-    }
+  .logo {
+    font-size: 30px;
+  }
 
-    .header a {
-        font-size: 18px;
-    }
+  .header a {
+    font-size: 18px;
+  }
 
-    .cv {
-        order: 2;
-    }
+  .cv {
+    order: 2;
+  }
 
-    .theme {
-        order: 3;
-        transform: scale(0.6);
-    }
+  .theme {
+    order: 3;
+    transform: scale(0.6);
+  }
 
-    .mainContainer {
-        width: 100vw;
-    }
+  .mainContainer {
+    width: 100vw;
+  }
 
-    .picture {
-        margin-bottom: 15px;
-    }
+  .picture {
+    margin-bottom: 15px;
+  }
 
-    .bibliography {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-        min-height: 650px;
-        max-height: 850px;
-        padding: 15px;
-    }
+  .bibliography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    min-height: 650px;
+    max-height: 850px;
+    padding: 15px;
+  }
 
-    #introduction {
-        text-align: center;
-        font-size: 16px;
-    }
+  #introduction {
+    text-align: center;
+    font-size: 16px;
+  }
 
-    .abilities {
-        margin-top: 20px;
-    }
+  .abilities {
+    margin-top: 20px;
+  }
 
-    .abilitiesImg {
-        width: 35px;
-    }
+  .abilitiesImg {
+    width: 35px;
+  }
 
-    .abilitiesSkillContainer {
-        display: none;
-    }
+  .abilitiesSkillContainer {
+    display: none;
+  }
 
-    .abilitiesContentContainer {
-        display: none;
-    }
+  .abilitiesContentContainer {
+    display: none;
+  }
 
-    .projects {
-        align-items: center;
-    }
+  .projects {
+    align-items: center;
+  }
 
-    .projectsTitle {
-        font-size: 35px;
-    }
+  .projectsTitle {
+    font-size: 35px;
+  }
 
-    .projectsContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        "gk gk"
-        "cb1 cb1"
-        "am1 am2"
-        "at1 at1";
-        padding: 20px 50px;
-        padding-top: 0px;
-        gap: 3px;
-        max-height: 350px;
-        max-width: 230px;
-        background-image: url("../images/pitch2.svg");
-        background-size: cover;
-    }
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "gk gk"
+      "cb1 cb1"
+      "am1 am2"
+      "at1 at1";
+    padding: 20px 50px;
+    padding-top: 0px;
+    gap: 3px;
+    max-height: 350px;
+    max-width: 230px;
+    background-image: url("../images/pitch2.svg");
+    background-size: cover;
+  }
 
-    .projectsContainer img {
-        width: 45px;
-    }
+  .projectsContainer img {
+    width: 45px;
+  }
 
-    .projectsContainer p {
-        font-size: 16px;
-    }
+  .projectsContainer p {
+    font-size: 16px;
+  }
 
-    .gk {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        grid-area: gk;
-    }
-    .lb {
-        display: none;
-    }
-    .cb1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        grid-area: cb1;
-    }
-    .cb2 {
-        display: none;
-    }
-    .rb {
-        display: none;
-    }
-    .lm {
-        display: none;
-    }
-    .am1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        grid-area: am1;
-    }
-    .am2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        grid-area: am2;
-    }
-    .rm {
-        display: none;
-    }
-    .at1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        grid-area: at1;
-    }
-    .at2 {
-        display: none;
-    }
+  .gk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    grid-area: gk;
+  }
+  .lb {
+    display: none;
+  }
+  .cb1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    grid-area: cb1;
+  }
+  .cb2 {
+    display: none;
+  }
+  .rb {
+    display: none;
+  }
+  .lm {
+    display: none;
+  }
+  .am1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    grid-area: am1;
+  }
+  .am2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    grid-area: am2;
+  }
+  .rm {
+    display: none;
+  }
+  .at1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    grid-area: at1;
+  }
+  .at2 {
+    display: none;
+  }
 
-    .projects {
-        display: flex;
-        flex-wrap: wrap;
-        max-height: 600px;
-        margin: 0;
-    }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 600px;
+    margin: 0;
+  }
 
-    .footer {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 25px;
-    }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
 
-    .socialMedias {
-        display: flex;
-    }
+  .socialMedias {
+    display: flex;
+  }
 
-    .socialMedias img {
-        margin: 5px;
-    }
+  .socialMedias img {
+    margin: 5px;
+  }
 
-    .e-mail{
-        padding: 0;
-        margin: 0;
-        max-width: 100vw;
-    }
+  .e-mail {
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+  }
 
-    #formName{
-        max-width: 100%;
-    }
+  #formName {
+    max-width: 100%;
+  }
 
-    #email{
-        max-width: 100%;
-    }
+  #email {
+    max-width: 100%;
+  }
 
-    #formMessage{
-        max-width: 100%;
-    }
+  #formMessage {
+    max-width: 100%;
+  }
 }
