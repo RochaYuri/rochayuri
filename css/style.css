@@ -226,6 +226,8 @@ body.dark {
 
 .abilities {
   grid-area: abilities;
+  display: grid;
+  place-content: start;
 }
 
 .abilities h2 {
