@@ -67,4 +67,4 @@
    
 ---
    
-   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=rochayuri&repo=calculadora&theme=github_dark&border_color=0D1117)](https://github.com/anuraghazra/github-readme-stats)    [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=rochayuri&repo=to-do-list&theme=github_dark&border_color=0D1117)](https://github.com/anuraghazra/github-readme-stats)     [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=rochayuri&repo=rcohayuri&theme=github_dark&border_color=0D1117)](https://github.com/anuraghazra/github-readme-stats)
+   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=rochayuri&repo=calculadora&theme=github_dark&border_color=0D1117)](https://github.com/anuraghazra/github-readme-stats)    [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=rochayuri&repo=to-do-list&theme=github_dark&border_color=0D1117)](https://github.com/anuraghazra/github-readme-stats)
