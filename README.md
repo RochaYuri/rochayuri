@@ -64,3 +64,7 @@
   [![GitHub Streak](https://streak-stats.demolab.com?user=rochayuri&theme=github-dark-blue&hide_border=true&border_radius=50&date_format=j%20M%5B%20Y%5D&mode=weekly)](https://git.io/streak-stats)
   <br>
   [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rochayuri&layout=compact&theme=github_dark&border_color=0D1117)](https://github.com/anuraghazra/github-readme-stats)
+   
+---
+   
+   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=rochayuri&repo=calculadora)](https://github.com/anuraghazra/github-readme-stats)
