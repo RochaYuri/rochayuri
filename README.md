@@ -33,7 +33,7 @@
 ---
 ### :man_technologist: Sobre mim :
 
-Sou um <img src="https://media.giphy.com/media/IauL6LvGNlT3ffhcqq/giphy.gif" width="30"> desenvolvedor do Brasil <img src="https://media.giphy.com/media/YMw8yNdrBTpuLuzXmO/giphy.gif" width="50">
+<img src="https://media.giphy.com/media/IauL6LvGNlT3ffhcqq/giphy.gif" width="30"> Sou um desenvolvedor do Brasil <img src="https://media.giphy.com/media/YMw8yNdrBTpuLuzXmO/giphy.gif" width="50">
   
 - :telescope: Trabalho como Suporte Técnico na Unimed Sorocaba.
 
